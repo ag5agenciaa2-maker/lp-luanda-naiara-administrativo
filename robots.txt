@@ -1,0 +1,31 @@
+User-agent: *
+Allow: /
+
+# AI Bots (GEO Optimization)
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: Claude-Web
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+# Sitemap
+Sitemap: http://www.luandanaiara.ag5agencia.site/sitemap.xml
+
+# Restricted Areas
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /*.pdf$
+
+# Crawl-delay for aggressive bots
+User-agent: AhrefsBot
+Crawl-delay: 10
+User-agent: SemrushBot
+Crawl-delay: 10
+User-agent: DotBot
+Crawl-delay: 10
+

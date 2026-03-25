@@ -1,0 +1,347 @@
+/* ═══════════════════════════════════════════════════════════════
+   COOKIE BANNER - Padrão AG5 Premium
+   Versão: 2.1.0 | Design: Verde Floresta + Dourado
+   ═══════════════════════════════════════════════════════════════ */
+
+:root {
+  --ck-accent: #906c16;
+  --ck-accent-light: #c9a227;
+  --ck-bg: #1a1a1a;
+  --ck-text: #ffffff;
+  --ck-muted: rgba(255,255,255,0.7);
+  --ck-border: rgba(144, 108, 22, 0.2);
+}
+
+/* ═══ BANNER INFERIOR ═══ */
+#ck-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--ck-bg);
+  border-top: 1px solid var(--ck-border);
+  padding: 24px;
+  z-index: 10000;
+  transform: translateY(100%);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  font-family: 'Inter', system-ui, sans-serif;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+#ck-banner.show {
+  transform: translateY(0);
+}
+
+#ck-banner.hide {
+  transform: translateY(100%);
+}
+
+.ck-banner-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.ck-banner-text {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--ck-muted);
+  flex: 1;
+}
+
+.ck-banner-text strong {
+  color: var(--ck-accent-light);
+  font-weight: 600;
+}
+
+.ck-banner-text a {
+  color: var(--ck-accent-light);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: all 0.3s ease;
+}
+
+.ck-banner-text a:hover {
+  color: var(--ck-accent);
+}
+
+.ck-banner-actions {
+  display: flex;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.ck-btn {
+  padding: 12px 28px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: inherit;
+  border-radius: 4px;
+}
+
+.ck-btn-primary {
+  background: linear-gradient(135deg, #906c16 0%, #c9a227 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(144, 108, 22, 0.3);
+}
+
+.ck-btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(144, 108, 22, 0.4);
+  filter: brightness(1.1);
+}
+
+.ck-btn-secondary {
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ck-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--ck-accent-light);
+  transform: translateY(-3px);
+}
+
+/* ═══ MODAL DE PREFERÊNCIAS ═══ */
+#ck-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 10001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+#ck-modal.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.ck-modal-content {
+  background: #f8f5f0;
+  width: 90%;
+  max-width: 580px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 30px 60px -12px rgba(0,0,0,0.4);
+  transform: scale(0.9);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  border-radius: 8px;
+  border: 1px solid rgba(144, 108, 22, 0.1);
+}
+
+#ck-modal.show .ck-modal-content {
+  transform: scale(1);
+}
+
+.ck-modal-header {
+  padding: 32px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(144, 108, 22, 0.1);
+}
+
+.ck-modal-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.ck-modal-close {
+  background: rgba(144, 108, 22, 0.05);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  color: #906c16;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ck-modal-close:hover {
+  background: #906c16;
+  color: #ffffff;
+  transform: rotate(90deg);
+}
+
+.ck-modal-body {
+  padding: 24px 40px 40px;
+}
+
+.ck-modal-text {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: #555555;
+  margin-bottom: 32px;
+}
+
+.ck-modal-text a {
+  color: #906c16;
+  text-decoration: underline;
+}
+
+/* ═══ OPÇÕES DE COOKIES ═══ */
+.ck-options {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ck-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid rgba(144, 108, 22, 0.08);
+  transition: all 0.3s ease;
+  border-radius: 6px;
+}
+
+.ck-option:hover {
+  border-color: #906c16;
+  background: #fdfcfa;
+}
+
+.ck-option-info {
+  flex: 1;
+}
+
+.ck-option-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+
+.ck-option-desc {
+  font-size: 0.8125rem;
+  color: #666666;
+  line-height: 1.5;
+}
+
+/* Toggle Switch */
+.ck-toggle {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.ck-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.ck-toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background: #e5e5e5;
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 24px;
+}
+
+.ck-toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background: white;
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 50%;
+}
+
+.ck-toggle input:checked + .ck-toggle-slider {
+  background: #906c16;
+}
+
+.ck-toggle input:checked + .ck-toggle-slider:before {
+  transform: translateX(20px);
+}
+
+.ck-toggle input:disabled + .ck-toggle-slider {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* ═══ MODAL FOOTER ═══ */
+.ck-modal-footer {
+  padding: 24px 40px 32px;
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+  border-top: 1px solid rgba(144, 108, 22, 0.1);
+  background: rgba(144, 108, 22, 0.02);
+}
+
+.ck-modal-footer .ck-btn {
+  padding: 12px 24px;
+}
+
+/* ═══ RESPONSIVE ═══ */
+@media (max-width: 640px) {
+  #ck-banner {
+    padding: 20px;
+  }
+  
+  .ck-banner-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .ck-banner-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .ck-btn {
+    width: 100%;
+  }
+  
+  .ck-modal-header,
+  .ck-modal-body,
+  .ck-modal-footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .ck-modal-footer {
+    flex-direction: column;
+  }
+  
+  .ck-option {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .ck-toggle {
+    align-self: flex-start;
+  }
+}
