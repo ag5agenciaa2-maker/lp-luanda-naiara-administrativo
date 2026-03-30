@@ -56,7 +56,7 @@
         <p class="ck-banner-text">
           <strong>Respeitamos sua privacidade.</strong> 
           Utilizamos cookies para melhorar sua experiência e analisar o tráfego do site. 
-          <a href="politica-de-privacidade.html">Saiba mais</a>
+          <a href="/politica-de-privacidade.html">Saiba mais</a>
         </p>
         <div class="ck-banner-actions">
           <button class="ck-btn ck-btn-secondary" id="ck-customize">Personalizar</button>
@@ -84,7 +84,7 @@
           <p class="ck-modal-text">
             Você pode escolher quais cookies deseja permitir. Os cookies necessários são essenciais 
             para o funcionamento do site e não podem ser desativados. 
-            <a href="politica-de-privacidade.html">Leia nossa Política de Privacidade</a>.
+            <a href="/politica-de-privacidade.html">Leia nossa Política de Privacidade</a>.
           </p>
           <div class="ck-options">
             <div class="ck-option">

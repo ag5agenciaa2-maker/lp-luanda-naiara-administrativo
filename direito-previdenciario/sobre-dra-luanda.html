@@ -11,7 +11,7 @@
         content="Conheça a trajetória da Dra. Luanda Naiara e a fundação do escritório Luanda Naiara - Advogada (Concurso Público).">
     <meta name="keywords" content="Luanda Naiara, advogada administrativo, OAB Campo Grande, concurso público, direito administrativo RJ">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.luandanaiara.ag5agencia.site/sobre-dra-luanda.html">
+    <link rel="canonical" href="https://www.luandanaiara.ag5agencia.site/direito-previdenciario/sobre-dra-luanda.html">
 
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
@@ -35,7 +35,7 @@
             "@type": "Organization",
             "name": "Luanda Naiara - Advogada (Concurso Público)"
           },
-          "image": "http://www.luandanaiara.ag5agencia.site/assets/dra-luanda-naiara-advogada-concurso-publico-campo-grande-rj%20(1).webp",
+          "image": "http://www.luandanaiara.ag5agencia.site/../assets/dra-luanda-naiara-advogada-concurso-publico-campo-grande-rj%20(1).webp",
           "description": "Advogada especialista em Direito Administrativo e Concursos Públicos.",
           "sameAs": [
             "https://www.google.com/search?kgmid=/g/11t81p_fkm",
@@ -51,10 +51,10 @@
 
     <!-- Preload Crítico -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" as="style">
-    <link rel="preload" href="assets/logo-branca-luanda-naiara-consultoria-juridica-especializada.webp" as="image">
+    <link rel="preload" href="../assets/logo-branca-luanda-naiara-consultoria-juridica-especializada.webp" as="image">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="assets/Favicon-luanda-naiara-consultoria-juridica-especializada.ico">
+    <link rel="icon" type="image/svg+xml" href="../assets/Favicon-luanda-naiara-consultoria-juridica-especializada.ico">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,51 +66,6 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <style>
-        /* Estilos do Rodapé - Concurso Público / Administrativo */
-        .adm-footer-site {
-            background-color: #000000;
-            border-top: 1px solid rgba(144, 108, 22, 0.2);
-            color: rgba(255, 255, 255, 0.7);
-            font-family: 'Inter', sans-serif;
-            padding: 0;
-            position: relative;
-            z-index: 10;
-            text-align: left;
-            height: 555px;
-        }
-
-        .adm-footer-main {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 35px 1.5rem 30px;
-        }
-
-        .adm-footer-nav-col {
-            width: auto;
-            margin-left: 57px;
-        }
-
-        .adm-footer-spec-col {
-            width: auto;
-            margin-left: 29px;
-        }
-
-        div.space-y-5 {
-            margin-top: 0px;
-        }
-
-        @media (max-width: 1023px) {
-            .adm-footer-site {
-                height: auto;
-            }
-            .adm-footer-nav-col, .adm-footer-spec-col {
-                margin: 0;
-                width: auto;
-                padding: 0;
-            }
-        }
-    </style>
     <!-- Cookie Banner CSS -->
     <link rel="stylesheet" href="cookie-banner.css">
 
@@ -121,30 +76,25 @@
                 extend: {
                     colors: {
                         gold: {
-                            light: '#c9a227',
                             DEFAULT: '#906c16',
+                            light: '#c9a227',
                             dark: '#6b4f10',
+                            muted: '#b8954a'
                         },
-                        cream: '#f8f5f0',
-                        dark: '#1a1a1a',
+                        dark: {
+                            DEFAULT: '#1a1a1a',
+                            light: '#2d2d2d',
+                            softer: '#3d3d3d'
+                        },
+                        cream: {
+                            DEFAULT: '#f8f5f0',
+                            dark: '#f0ebe3',
+                            light: '#fdfcfa'
+                        }
                     },
                     fontFamily: {
-                        serif: ['Playfair Display', 'serif'],
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                    animation: {
-                        'fade-in': 'fadeIn 1s ease-out forwards',
-                        'slide-up': 'slideUp 0.8s ease-out forwards',
-                    },
-                    keyframes: {
-                        fadeIn: {
-                            '0%': { opacity: '0' },
-                            '100%': { opacity: '1' },
-                        },
-                        slideUp: {
-                            '0%': { transform: 'translateY(30px)', opacity: '0' },
-                            '100%': { transform: 'translateY(0)', opacity: '1' },
-                        },
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                        sans: ['Inter', 'system-ui', 'sans-serif']
                     }
                 }
             }
@@ -156,6 +106,18 @@
         body { font-family: 'Inter', sans-serif; background-color: #f8f5f0; }
         h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
 
+        .icon {
+            width: 1.5rem;
+            height: 1.5rem;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .icon-sm {
+            width: 1rem;
+            height: 1rem;
+        }
+
         .reveal {
             opacity: 0;
             transform: translateY(30px);
@@ -166,9 +128,6 @@
             opacity: 1;
             transform: translateY(0);
         }
-
-        /* AG5 Footer Styles movidos para shared-footer-admin.css */
-
 
         .mobile-menu {
             transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -207,39 +166,323 @@
             100% { box-shadow: 0 0 0 0 rgba(201, 162, 39, 0); }
         }
     </style>
+    <style>
+        /* Estilos do Rodapé - Direito Previdenciário */
+        .prev-footer-site {
+            background-color: #000000;
+            border-top: 1px solid rgba(91, 64, 2, 0.2);
+            color: rgba(255, 255, 255, 0.7);
+            font-family: 'Inter', sans-serif;
+            padding: 0;
+            position: relative;
+            z-index: 10;
+            text-align: left;
+            height: 555px;
+        }
+
+        .prev-footer-main {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 35px 1.5rem 30px;
+        }
+
+        .prev-footer-nav-col {
+            margin-right: 117px;
+            margin-left: 57px;
+            width: 220px;
+        }
+
+        .prev-footer-spec-col {
+            padding-left: 0px;
+            width: 220px;
+            padding-right: 0px;
+            margin-right: 23px;
+            margin-left: 29px;
+        }
+
+        div.space-y-5 {
+            margin-top: 0;
+        }
+
+        @media (max-width: 1023px) {
+
+            .prev-footer-nav-col,
+            .prev-footer-spec-col {
+                margin: 0;
+                width: auto;
+                padding: 0;
+            }
+        }
+
+        /* Floating WhatsApp Button */
+        .btn-flutuante-whatsapp {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 65px;
+            height: 65px;
+            background-color: #25d366;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            z-index: 9999;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .btn-flutuante-whatsapp:hover {
+            transform: scale(1.1);
+            background-color: #128c7e;
+        }
+
+        @media (max-width: 768px) {
+            .btn-flutuante-whatsapp {
+                bottom: 20px;
+                right: 20px;
+                width: 55px;
+                height: 55px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="../cookie-banner.css">
 </head>
 
 <body class="antialiased">
 
+    <!-- SVG Icons Sprite -->
+    <svg style="display: none;">
+        <defs>
+            <symbol id="icon-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="7" />
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+            </symbol>
+            <symbol id="icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+            </symbol>
+            <symbol id="icon-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+            </symbol>
+            <symbol id="icon-file-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+                <polyline points="14 2 14 8 20 8" />
+                <path d="M9 15l2 2 4-4" />
+            </symbol>
+            <symbol id="icon-shield-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                <line x1="12" y1="8" x2="12" y2="12" />
+                <line x1="12" y1="16" x2="12.01" y2="16" />
+            </symbol>
+            <symbol id="icon-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </symbol>
+            <symbol id="icon-heart-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                    d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 7.65l.77.77 7.65 7.65 7.65-7.65.77-.77a5.4 5.4 0 0 0 0-7.65z" />
+                <path d="M3.5 12h6l.5-1 2 4.5 2-7 1.5 3.5h5" />
+            </symbol>
+            <symbol id="icon-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </symbol>
+            <symbol id="icon-graduation-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+            </symbol>
+            <symbol id="icon-map-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+            </symbol>
+            <symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </symbol>
+            <symbol id="icon-whatsapp" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </symbol>
+            <symbol id="icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+            </symbol>
+            <symbol id="icon-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+            </symbol>
+            <symbol id="icon-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </symbol>
+            <symbol id="icon-facebook" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+            </symbol>
+            <symbol id="icon-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+            </symbol>
+            <symbol id="icon-quote" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                <path
+                    d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21c0 1 0 1 1 1z" />
+                <path
+                    d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" />
+            </symbol>
+            <symbol id="icon-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <circle cx="12" cy="12" r="6" />
+                <circle cx="12" cy="12" r="2" />
+            </symbol>
+            <symbol id="icon-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                    d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 7.65l.77.77 7.65 7.65 7.65-7.65.77-.77a5.4 5.4 0 0 0 0-7.65z" />
+            </symbol>
+            <symbol id="icon-trophy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                <path d="M4 22h16" />
+                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                <path d="M18 2H6v7a6 6 0 0 0 12 0V2z" />
+            </symbol>
+            <symbol id="icon-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+            </symbol>
+            <symbol id="icon-message-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+            </symbol>
+            <symbol id="icon-alert-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="12" y1="8" x2="12" y2="12" />
+                <line x1="12" y1="16" x2="12.01" y2="16" />
+            </symbol>
+            <symbol id="icon-check-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+            </symbol>
+            <symbol id="icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+            </symbol>
+            <symbol id="icon-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+            </symbol>
+            <symbol id="icon-dollar-sign" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="1" x2="12" y2="23" />
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+            </symbol>
+            <symbol id="icon-activity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+            </symbol>
+            <symbol id="icon-user-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="8.5" cy="7" r="4" />
+                <polyline points="17 11 19 13 23 9" />
+            </symbol>
+            <symbol id="icon-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+            </symbol>
+            <symbol id="icon-clipboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
+            </symbol>
+            <symbol id="icon-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </symbol>
+            <symbol id="icon-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </symbol>
+            <symbol id="icon-chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9" />
+            </symbol>
+        </defs>
+    </svg>
+
     <!-- Header / Navigation -->
-    <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#1a1a1a]/95 backdrop-blur-md">
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
         <div class="w-full px-4 sm:px-6 lg:px-12 xl:px-20">
             <div class="flex items-center justify-between h-20 lg:h-24">
                 <!-- Logo -->
                 <a href="index.html" class="flex items-center gap-3">
-                    <img src="assets/logo-branca-luanda-naiara-consultoria-juridica-especializada.webp"
-                        alt="Luanda Naiara - Advogada (Concurso Público)" class="h-12 lg:h-14 w-auto" width="220" height="56">
+                    <img src="../assets/logo-branca-luanda-naiara-consultoria-juridica-especializada.webp"
+                        alt="Luanda Naiara - Advogada (Direito Previdenciário)" class="h-12 lg:h-14 w-auto" width="220"
+                        height="56">
                 </a>
 
                 <!-- Desktop Navigation -->
                 <nav class="hidden lg:flex items-center gap-8">
-                    <a href="index.html" class="nav-link text-white/90 hover:text-white text-sm font-medium transition-colors">Início</a>
-                    <a href="servicos/" class="nav-link text-white/90 hover:text-white text-sm font-medium transition-colors">Serviços</a>
-                    <a href="sobre-dra-luanda.html" class="nav-link text-[#c9a227] hover:text-[#c9a227] text-sm font-medium transition-colors">Sobre a Doutora</a>
-                    <a href="index.html#contato" class="nav-link text-white/90 hover:text-white text-sm font-medium transition-colors">Contato</a>
+                    <a href="index.html"
+                        class="nav-link text-white/90 hover:text-white text-sm font-medium transition-colors">Início</a>
+                    <a href="servicos.html"
+                        class="nav-link text-white/90 hover:text-white text-sm font-medium transition-colors">Serviços</a>
+                    <a href="sobre-dra-luanda.html"
+                        class="nav-link text-white/90 hover:text-white text-sm font-medium transition-colors">Sobre a
+                        Doutora</a>
+                    <a href="#contato"
+                        class="nav-link text-white/90 hover:text-white text-sm font-medium transition-colors">Contato</a>
                 </nav>
 
                 <!-- CTA Button -->
                 <div class="hidden lg:block">
-                    <a href="https://wa.me/5521972542096?text=Olá,%20vim%20através%20do%20site%20e%20gostaria%20de%20uma%20informação."
+                    <a href="https://wa.me/5521972542096?text=Olá,%20vim%20através%20do%20site%20de%20Direito%20Previdenciário%20e%20gostaria%20de%20uma%20informação."
                         target="_blank"
                         class="inline-flex items-center gap-2 bg-[#906c16] hover:bg-[#c9a227] text-white px-6 py-3 rounded-lg font-medium text-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg">
+                        <svg class="icon icon-sm">
+                            <use href="#icon-whatsapp" />
+                        </svg>
                         Fale Conosco
                     </a>
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <button id="menuBtn" class="lg:hidden flex flex-col gap-1.5 p-2 transition-all hover:opacity-70">
+                <button id="menuBtn" class="lg:hidden hamburger flex flex-col gap-1.5 p-2 transition-all hover:opacity-70">
                     <span class="w-6 h-0.5 bg-white block"></span>
                     <span class="w-6 h-0.5 bg-white block"></span>
                     <span class="w-6 h-0.5 bg-white block"></span>
@@ -248,34 +491,45 @@
         </div>
 
         <!-- Mobile Menu Overlay -->
-        <div id="menuOverlay" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[45] opacity-0 pointer-events-none transition-opacity duration-500 lg:hidden"></div>
+        <div id="menuOverlay"
+            class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[45] opacity-0 pointer-events-none transition-opacity duration-500 lg:hidden">
+        </div>
 
         <!-- Mobile Menu Drawer -->
-        <div id="mobileMenu" class="mobile-menu fixed top-0 right-0 w-[85%] sm:w-80 h-full bg-black shadow-2xl lg:hidden z-50 flex flex-col lg:translate-x-full translate-x-full transition-transform duration-500 ease-in-out">
+        <div id="mobileMenu"
+            class="mobile-menu fixed top-0 right-0 w-[85%] sm:w-80 h-full bg-black shadow-2xl lg:hidden z-50 flex flex-col">
             <div class="p-8 flex flex-col h-full">
                 <div class="flex items-center justify-between mb-12">
-                    <img src="assets/logo-branca-luanda-naiara-consultoria-juridica-especializada.webp"
-                         alt="Luanda Naiara - Advogada (Concurso Público)" class="h-10 w-auto" width="160" height="40">
+                    <a href="index.html">
+                        <img src="../assets/logo-branca-luanda-naiara-consultoria-juridica-especializada.webp"
+                            alt="Luanda Naiara" class="h-10 w-auto" width="160" height="40">
+                    </a>
                     <button id="closeMenu" class="text-white/70 hover:text-white transition-colors">
-                        <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="18" y1="6" x2="6" y2="18"></line>
-                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        <svg class="w-8 h-8">
+                            <use href="#icon-x" />
                         </svg>
                     </button>
                 </div>
-                
+
                 <nav class="flex flex-col gap-6">
-                    <a href="index.html" class="text-white text-xl font-serif hover:text-[#c9a227] transition-colors">Início</a>
-                    <a href="servicos/" class="text-white text-xl font-serif hover:text-[#c9a227] transition-colors">Serviços</a>
-                    <a href="sobre-dra-luanda.html" class="text-[#c9a227] text-xl font-serif hover:text-white transition-colors">Sobre a Doutora</a>
-                    <a href="index.html#contato" class="text-white text-xl font-serif hover:text-[#c9a227] transition-colors">Contato</a>
+                    <a href="index.html"
+                        class="text-white text-xl font-serif hover:text-[#c9a227] transition-colors">Início</a>
+                    <a href="servicos.html"
+                        class="text-white text-xl font-serif hover:text-[#c9a227] transition-colors">Serviços</a>
+                    <a href="sobre-dra-luanda.html"
+                        class="text-white text-xl font-serif hover:text-[#c9a227] transition-colors">Sobre a Doutora</a>
+                    <a href="#contato"
+                        class="text-white text-xl font-serif hover:text-[#c9a227] transition-colors">Contato</a>
                 </nav>
 
                 <div class="mt-auto pt-8 border-t border-white/10">
                     <p class="text-white/40 text-[10px] uppercase tracking-widest mb-4">Atendimento</p>
-                    <a href="https://wa.me/5521972542096?text=Olá,%20vim%20através%20do%20site%20e%20gostaria%20de%20uma%20informação."
+                    <a href="https://wa.me/5521972542096?text=Olá,%20vim%20através%20do%20site%20de%20Direito%20Previdenciário%20e%20gostaria%20de%20uma%20informação."
                         target="_blank"
                         class="w-full justify-center inline-flex items-center gap-2 bg-[#906c16] text-white px-6 py-4 rounded-xl font-bold transition-all hover:bg-[#c9a227]">
+                        <svg class="w-5 h-5">
+                            <use href="#icon-whatsapp" />
+                        </svg>
                         Falar pelo WhatsApp
                     </a>
                 </div>
@@ -312,7 +566,7 @@
                         <!-- Background Pattern -->
                         <div class="absolute -inset-4 border border-white/10 rounded-2xl -z-10 group-hover:-inset-6 transition-all duration-700"></div>
                         
-                        <img src="assets/dra-luanda-naiara-advogada-concurso-publico-campo-grande-rj (1).webp" 
+                        <img src="../assets/dra-luanda-naiara-advogada-concurso-publico-campo-grande-rj (1).webp" 
                             alt="Dra. Luanda Naiara - Advogada Especialista em Concursos Públicos" 
                             class="w-[450px] h-[600px] object-cover rounded-2xl shadow-3xl grayscale-[20%] group-hover:grayscale-0 transition-all duration-700" 
                             width="450" height="600" fetchpriority="high">
@@ -342,7 +596,7 @@
                 <!-- Visual Composition -->
                 <div class="lg:col-span-5 reveal relative flex items-center">
                     <div class="relative w-full">
-                        <img src="assets/dra-luanda-naiara-advogada-concurso-publico-campo-grande-rj (15).webp" 
+                        <img src="../assets/dra-luanda-naiara-advogada-concurso-publico-campo-grande-rj (15).webp" 
                             alt="Dra. Luanda Naiara - Trajetória Profissional em Direito Administrativo" 
                             class="w-full h-[600px] object-cover rounded-2xl shadow-3xl z-10 relative" 
                             width="800" height="600" loading="lazy">
@@ -493,28 +747,28 @@
             
             <div class="columns-1 md:columns-2 lg:columns-4 gap-6 space-y-6 reveal">
                 <div class="break-inside-avoid overflow-hidden rounded-2xl shadow-2xl transition-transform hover:scale-[1.02] duration-500">
-                    <img src="assets/dra-luanda-naiara-advogada-concurso-publico-campo-grande-rj (1).webp" alt="Foto Galeria" class="w-full" width="400" height="300">
+                    <img src="../assets/dra-luanda-naiara-advogada-concurso-publico-campo-grande-rj (1).webp" alt="Foto Galeria" class="w-full" width="400" height="300">
                 </div>
                 <div class="break-inside-avoid overflow-hidden rounded-2xl shadow-2xl transition-transform hover:scale-[1.02] duration-500">
-                    <img src="assets/advogada-luanda-naiara-escritorio-direito-administrativo-rj (1).webp" alt="Foto Galeria" class="w-full" width="400" height="300">
+                    <img src="../assets/advogada-luanda-naiara-escritorio-direito-administrativo-rj (1).webp" alt="Foto Galeria" class="w-full" width="400" height="300">
                 </div>
                 <div class="break-inside-avoid overflow-hidden rounded-2xl shadow-2xl transition-transform hover:scale-[1.02] duration-500">
-                    <img src="assets/dra-luanda-naiara-advogada-concurso-publico-campo-grande-rj (8).webp" alt="Foto Galeria" class="w-full" width="400" height="300">
+                    <img src="../assets/dra-luanda-naiara-advogada-concurso-publico-campo-grande-rj (8).webp" alt="Foto Galeria" class="w-full" width="400" height="300">
                 </div>
                 <div class="break-inside-avoid overflow-hidden rounded-2xl shadow-2xl transition-transform hover:scale-[1.02] duration-500">
-                    <img src="assets/advogada-luanda-naiara-escritorio-direito-administrativo-rj (3).webp" alt="Foto Galeria" class="w-full" width="400" height="300">
+                    <img src="../assets/advogada-luanda-naiara-escritorio-direito-administrativo-rj (3).webp" alt="Foto Galeria" class="w-full" width="400" height="300">
                 </div>
                 <div class="break-inside-avoid overflow-hidden rounded-2xl shadow-2xl transition-transform hover:scale-[1.02] duration-500">
-                    <img src="assets/dra-luanda-naiara-advogada-concurso-publico-campo-grande-rj (13).webp" alt="Foto Galeria" class="w-full" width="400" height="300">
+                    <img src="../assets/dra-luanda-naiara-advogada-concurso-publico-campo-grande-rj (13).webp" alt="Foto Galeria" class="w-full" width="400" height="300">
                 </div>
                 <div class="break-inside-avoid overflow-hidden rounded-2xl shadow-2xl transition-transform hover:scale-[1.02] duration-500">
-                    <img src="assets/dra-luanda-naiara-advogada-concurso-publico-campo-grande-rj (10).webp" alt="Foto Galeria" class="w-full" width="400" height="300">
+                    <img src="../assets/dra-luanda-naiara-advogada-concurso-publico-campo-grande-rj (10).webp" alt="Foto Galeria" class="w-full" width="400" height="300">
                 </div>
                 <div class="break-inside-avoid overflow-hidden rounded-2xl shadow-2xl transition-transform hover:scale-[1.02] duration-500">
-                    <img src="assets/dra-luanda-naiara-advogada-concurso-publico-campo-grande-rj (5).webp" alt="Foto Galeria" class="w-full" width="400" height="300">
+                    <img src="../assets/dra-luanda-naiara-advogada-concurso-publico-campo-grande-rj (5).webp" alt="Foto Galeria" class="w-full" width="400" height="300">
                 </div>
                 <div class="break-inside-avoid overflow-hidden rounded-2xl shadow-2xl transition-transform hover:scale-[1.02] duration-500">
-                    <img src="assets/advogada-luanda-naiara-escritorio-direito-administrativo-rj (5).webp" alt="Foto Galeria" class="w-full" width="400" height="300">
+                    <img src="../assets/advogada-luanda-naiara-escritorio-direito-administrativo-rj (5).webp" alt="Foto Galeria" class="w-full" width="400" height="300">
                 </div>
             </div>
         </div>
@@ -525,7 +779,7 @@
         <div class="w-full px-4 sm:px-6 lg:px-12 xl:px-20">
             <div class="bg-dark rounded-3xl p-8 lg:p-20 flex flex-col lg:flex-row items-center gap-12 text-white">
                 <div class="lg:w-1/3 reveal">
-                    <img src="assets/ebook-caminhos-para-a-posse-dra-luanda-naiara-advogada.webp" alt="Ebook Caminhos para a Posse" class="w-full rounded-xl shadow-2xl transform lg:-rotate-6" width="400" height="600">
+                    <img src="../assets/ebook-caminhos-para-a-posse-dra-luanda-naiara-advogada.webp" alt="Ebook Caminhos para a Posse" class="w-full rounded-xl shadow-2xl transform lg:-rotate-6" width="400" height="600">
                 </div>
                 <div class="lg:w-2/3 reveal">
                     <span class="text-gold text-sm font-semibold uppercase tracking-widest mb-4 inline-block tracking-[0.2em] animate-pulse">Ebook Gratuito</span>
@@ -543,83 +797,91 @@
     </section>
 
     <!-- RODAPÉ -->
-    <footer class="adm-footer-site relative pt-20 pb-10 bg-[#1a1a1a] overflow-hidden">
+    <footer class="prev-footer-site relative pt-20 pb-10 bg-[#1a1a1a] overflow-hidden">
         <!-- Decoration element -->
         <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#906c16]/50 to-transparent">
         </div>
 
-        <div class="w-full px-4 sm:px-6 lg:px-12 xl:px-20 adm-footer-main">
+        <div class="w-full px-4 sm:px-6 lg:px-12 xl:px-20 prev-footer-main">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
                 <!-- Coluna 1: Marca & Missão -->
                 <div class="space-y-6">
-                    <img src="assets/logo-branca-luanda-naiara-consultoria-juridica-especializada.webp"
-                        alt="Luanda Naiara - Advogada (Concurso Público)" class="h-14 w-auto brightness-110">
+                    <img src="../assets/logo-branca-luanda-naiara-consultoria-juridica-especializada.webp"
+                        alt="Luanda Naiara - Advogada (Direito Previdenciário)" class="h-14 w-auto brightness-110">
                     <p class="text-white/60 text-sm leading-relaxed max-w-xs">
-                        Escritório especializado em Direito Administrativo e Concursos Públicos. Atuamos com excelência técnica e foco na garantia dos seus direitos fundamentais.
+                        Escritório especializado em Direito Previdenciário. Atuamos com excelência
+                        técnica e foco na garantia dos seus direitos perante o INSS.
                     </p>
                     <div class="flex items-center gap-4">
                         <a href="https://www.instagram.com/luandanaiaraadv/" target="_blank" rel="noopener noreferrer"
                             class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/70 hover:bg-[#906c16] hover:text-white hover:border-[#906c16] transition-all duration-300">
-                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            <svg class="w-5 h-5">
+                                <use href="#icon-instagram" />
                             </svg>
                         </a>
                         <a href="https://br.linkedin.com/in/dra-luanda-naiara-ceo-de-escrit%C3%B3rio-de-advocacia-08919073"
                             target="_blank" rel="noopener noreferrer"
                             class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/70 hover:bg-[#906c16] hover:text-white hover:border-[#906c16] transition-all duration-300">
-                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path
-                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                                <rect x="2" y="9" width="4" height="12" />
-                                <circle cx="4" cy="4" r="2" />
+                            <svg class="w-5 h-5">
+                                <use href="#icon-linkedin" />
                             </svg>
                         </a>
                         <a href="https://www.facebook.com/luandanaiaraadv/" target="_blank" rel="noopener noreferrer"
                             class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/70 hover:bg-[#906c16] hover:text-white hover:border-[#906c16] transition-all duration-300">
-                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            <svg class="w-5 h-5">
+                                <use href="#icon-facebook" />
                             </svg>
                         </a>
                     </div>
                 </div>
 
                 <!-- Coluna 2: Navegação -->
-                <div class="adm-footer-nav-col">
+                <div class="prev-footer-nav-col">
                     <h4 class="font-serif text-white text-lg font-semibold mb-8 relative inline-block">
                         Links Rápidos
                         <span class="absolute -bottom-2 left-0 w-8 h-0.5 bg-[#906c16]"></span>
                     </h4>
                     <ul class="space-y-4">
-                        <li><a href="index.html" class="text-white/60 hover:text-[#c9a227] transition-colors text-sm flex items-center gap-2 group"><span class="w-1.5 h-1.5 rounded-full bg-[#906c16]/30 group-hover:bg-[#906c16] transition-colors"></span> Início</a></li>
-                        <li><a href="servicos/" class="text-white/60 hover:text-[#c9a227] transition-colors text-sm flex items-center gap-2 group"><span class="w-1.5 h-1.5 rounded-full bg-[#906c16]/30 group-hover:bg-[#906c16] transition-colors"></span> Serviços</a></li>
-                        <li><a href="sobre-dra-luanda.html" class="text-white/60 hover:text-[#c9a227] transition-colors text-sm flex items-center gap-2 group"><span class="w-1.5 h-1.5 rounded-full bg-[#906c16]/30 group-hover:bg-[#906c16] transition-colors"></span> Sobre a Doutora</a></li>
-                        <li><a href="index.html#contato" class="text-white/60 hover:text-[#c9a227] transition-colors text-sm flex items-center gap-2 group"><span class="w-1.5 h-1.5 rounded-full bg-[#906c16]/30 group-hover:bg-[#906c16] transition-colors"></span> Contato</a></li>
+                        <li><a href="index.html"
+                                class="text-white/60 hover:text-[#c9a227] transition-colors text-sm flex items-center gap-2 group"><span
+                                    class="w-1.5 h-1.5 rounded-full bg-[#906c16]/30 group-hover:bg-[#906c16] transition-colors"></span>
+                                Início</a></li>
+                        <li><a href="servicos.html"
+                                class="text-white/60 hover:text-[#c9a227] transition-colors text-sm flex items-center gap-2 group"><span
+                                    class="w-1.5 h-1.5 rounded-full bg-[#906c16]/30 group-hover:bg-[#906c16] transition-colors"></span>
+                                Serviços</a></li>
+                        <li><a href="sobre-dra-luanda.html"
+                                class="text-white/60 hover:text-[#c9a227] transition-colors text-sm flex items-center gap-2 group"><span
+                                    class="w-1.5 h-1.5 rounded-full bg-[#906c16]/30 group-hover:bg-[#906c16] transition-colors"></span>
+                                Sobre a Doutora</a></li>
+                        <li><a href="index.html#contato"
+                                class="text-white/60 hover:text-[#c9a227] transition-colors text-sm flex items-center gap-2 group"><span
+                                    class="w-1.5 h-1.5 rounded-full bg-[#906c16]/30 group-hover:bg-[#906c16] transition-colors"></span>
+                                Contato</a></li>
                     </ul>
                 </div>
 
                 <!-- Coluna 3: Áreas de Atuação -->
-                <div class="adm-footer-spec-col">
+                <div class="prev-footer-spec-col">
                     <h4 class="font-serif text-white text-lg font-semibold mb-8 relative inline-block">
                         Especialidades
                         <span class="absolute -bottom-2 left-0 w-8 h-0.5 bg-[#906c16]"></span>
                     </h4>
                     <ul class="space-y-4">
                         <li><a href="index.html#servicos"
-                                class="text-white/60 hover:text-[#c9a227] transition-colors text-sm">Nomeação e Posse</a></li>
+                                class="text-white/60 hover:text-[#c9a227] transition-colors text-sm">Revisão de
+                                Aposentadoria</a></li>
                         <li><a href="index.html#servicos"
-                                class="text-white/60 hover:text-[#c9a227] transition-colors text-sm">Direito Administrativo</a></li>
+                                class="text-white/60 hover:text-[#c9a227] transition-colors text-sm">Aposentadoria
+                                Especial</a></li>
                         <li><a href="index.html#servicos"
-                                class="text-white/60 hover:text-[#c9a227] transition-colors text-sm">Cotas Raciais</a>
+                                class="text-white/60 hover:text-[#c9a227] transition-colors text-sm">Auxílio-Doença</a>
                         </li>
                         <li><a href="index.html#servicos"
-                                class="text-white/60 hover:text-[#c9a227] transition-colors text-sm">Defesa de Servidor</a></li>
+                                class="text-white/60 hover:text-[#c9a227] transition-colors text-sm">Pensão por
+                                Morte</a></li>
                         <li><a href="index.html#servicos"
-                                class="text-white/60 hover:text-[#c9a227] transition-colors text-sm">Piso do Magistério</a></li>
+                                class="text-white/60 hover:text-[#c9a227] transition-colors text-sm">LOAS/BPC</a></li>
                     </ul>
                 </div>
 
@@ -635,28 +897,21 @@
                             class="flex items-center gap-3 group">
                             <div
                                 class="w-8 h-8 rounded bg-[#906c16]/10 flex items-center justify-center text-[#906c16] group-hover:bg-[#906c16] group-hover:text-white transition-all">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                    stroke-width="2">
-                                    <path
-                                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-                                        stroke-linecap="round" stroke-linejoin="round" />
+                                <svg class="w-4 h-4">
+                                    <use href="#icon-briefcase" />
                                 </svg>
                             </div>
                             <span
                                 class="text-white text-sm font-semibold group-hover:text-[#c9a227] transition-colors">Luanda
-                                Naiara - Advogada (Concurso Público)</span>
+                                Naiara - Advogada (Direito Previdenciário)</span>
                         </a>
                         <!-- Endereço -->
                         <a href="https://www.google.com/maps/dir//Luanda+Naiara+-+Advogada+(Concurso+Público)+-+Estr.+da+Cachamorra,+350+-+Bloco+03,+Sala+403+-+Campo+Grande,+Rio+de+Janeiro+-+RJ,+23040-150"
                             target="_blank" class="flex items-start gap-3 group">
                             <div
                                 class="w-8 h-8 rounded bg-[#906c16]/10 flex items-center justify-center text-[#906c16] flex-shrink-0 group-hover:bg-[#906c16] group-hover:text-white transition-all">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                    stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <svg class="w-4 h-4">
+                                    <use href="#icon-map-pin" />
                                 </svg>
                             </div>
                             <p class="text-white/60 text-sm leading-snug group-hover:text-white transition-colors">
@@ -664,15 +919,14 @@
                             </p>
                         </a>
                         <!-- WhatsApp Link Discreto -->
-                        <div class="flex items-center gap-3">
+                        <div class="flex items-center gap-3 group">
                             <div
-                                class="w-8 h-8 rounded bg-[#906c16]/10 flex items-center justify-center text-[#906c16]">
-                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                    <path
-                                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                                class="w-8 h-8 rounded bg-[#906c16]/10 flex items-center justify-center text-[#906c16] group-hover:bg-[#25d366] group-hover:text-white transition-all">
+                                <svg class="w-4 h-4">
+                                    <use href="#icon-whatsapp" />
                                 </svg>
                             </div>
-                            <a href="https://wa.me/5521972542096?text=Olá,%20vim%20através%20do%20site%20e%20gostaria%20de%20uma%20informação."
+                            <a href="https://wa.me/5521972542096?text=Olá,%20vim%20através%20do%20site%20de%20Direito%20Previdenciário%20e%20gostaria%20de%20uma%20informação."
                                 target="_blank"
                                 class="text-white/60 hover:text-white transition-colors text-sm font-medium">
                                 (21) 97254-2096
@@ -687,7 +941,9 @@
                 <!-- Copyright & Agency Row -->
                 <div class="flex flex-col md:flex-row justify-between items-center gap-6">
                     <p class="text-white/30 text-[10px] md:text-xs">
-                        © 2026 <a href="https://share.google/yKxKbfZrGtUXprTmP" target="_blank" class="hover:text-white transition-colors">Luanda Naiara - Advogada (Concurso Público)</a> | OAB/RJ 228701. Todos os direitos
+                        © 2026 <a href="https://share.google/yKxKbfZrGtUXprTmP" target="_blank"
+                            class="hover:text-white transition-colors">Luanda Naiara - Advogada (Direito
+                            Previdenciário)</a> | OAB/RJ 228701. Todos os direitos
                         reservados.
                     </p>
                     <span class="text-white/30 text-[10px] md:text-xs">
@@ -710,12 +966,17 @@
                         Cookie
                     </a>
                     <span class="text-white/10 text-[10px] md:text-xs">|</span>
-                    <a href="termos-e-condicoes.html"
+                    <a href="../termos-e-condicoes.html"
                         class="text-white/30 hover:text-white text-[10px] md:text-xs transition-colors">Termos de
                         Uso</a>
                     <span class="text-white/10 text-[10px] md:text-xs">|</span>
-                    <a href="politica-de-privacidade.html"
+                    <a href="../politica-de-privacidade.html"
                         class="text-white/30 hover:text-white text-[10px] md:text-xs transition-colors">Política de
+                        Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>transition-colors">Política de
                         Privacidade</a>
                 </div>
             </div>
@@ -727,11 +988,11 @@
         const header = document.getElementById('header');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 100) {
-                header.classList.add('py-2', 'shadow-lg');
-                header.classList.remove('py-4', 'lg:py-6');
+                header.classList.add('bg-[#1a1a1a]/95', 'backdrop-blur-md', 'shadow-lg', 'py-4');
+                header.classList.remove('py-6');
             } else {
-                header.classList.remove('py-2', 'shadow-lg');
-                header.classList.add('py-4', 'lg:py-6');
+                header.classList.remove('bg-[#1a1a1a]/95', 'backdrop-blur-md', 'shadow-lg', 'py-4');
+                header.classList.add('py-6');
             }
         });
 
@@ -743,8 +1004,6 @@
 
         function toggleMenu(isOpen) {
             if (isOpen) {
-                mobileMenu.classList.remove('lg:translate-x-full');
-                mobileMenu.classList.remove('translate-x-full'); // Fallback if needed
                 mobileMenu.style.transform = 'translateX(0)';
                 menuOverlay.classList.remove('pointer-events-none');
                 menuOverlay.classList.add('opacity-100');
@@ -761,10 +1020,6 @@
         closeMenu.addEventListener('click', () => toggleMenu(false));
         menuOverlay.addEventListener('click', () => toggleMenu(false));
 
-        mobileMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => toggleMenu(false));
-        });
-
         // Reveal animation
         const revealElements = document.querySelectorAll('.reveal');
         const revealObserver = new IntersectionObserver((entries) => {
@@ -776,16 +1031,16 @@
         }, { threshold: 0.1 });
         revealElements.forEach(el => revealObserver.observe(el));
     </script>
+
     <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/5521972542096?text=Olá,%20vim%20através%20do%20site%20e%20gostaria%20de%20uma%20informação."
-        target="_blank"
-        class="btn-flutuante-whatsapp"
-        role="button" aria-label="Falar pelo WhatsApp">
-        <svg viewBox="0 0 16 16" width="32" height="32" fill="currentColor">
-            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+    <a href="https://wa.me/5521972542096?text=Olá,%20vim%20através%20do%20site%20de%20Direito%20Previdenciário%20e%20gostaria%20de%20uma%20informação."
+        target="_blank" class="btn-flutuante-whatsapp" role="button" aria-label="Falar pelo WhatsApp">
+        <svg class="w-8 h-8">
+            <use href="#icon-whatsapp" />
         </svg>
     </a>
 
+    <script src="../cookie-banner.js"></script>
     <script>
         // Ativar o link de preferências de cookie do rodapé
         const ckFooterLink = document.querySelector('#shared-ck-prefs-link');
@@ -796,7 +1051,6 @@
             });
         }
     </script>
-    <script src="cookie-banner.js"></script>
 </body>
 
 </html>

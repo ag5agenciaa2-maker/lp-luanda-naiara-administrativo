@@ -9,8 +9,11 @@
     <title>Serviços de Advocacia em Concursos em Campo Grande RJ | Luanda Naiara - Advogada (Concurso Público)</title>
     <meta name="description"
         content="Conheça todos os serviços de Direito Administrativo e Concursos Públicos da Luanda Naiara em Campo Grande RJ. Nomeação e Posse, TAF, Cotas e mais. Fale conosco pelo WhatsApp.">
-    <link rel="canonical" href="http://www.luandanaiara.ag5agencia.site/servicos/">
+    <link rel="canonical" href="https://www.luandanaiara.ag5agencia.site/servicos/">
     <meta name="robots" content="index, follow">
+ 
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/Favicon-luanda-naiara-consultoria-juridica-especializada.ico">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Serviços | Luanda Naiara - Advogada (Concurso Público)">
@@ -48,22 +51,22 @@
           "url": "http://www.luandanaiara.ag5agencia.site/servicos/cotas-e-heteroidentificacao-concurso-rj"
         },
         {
-            "@type": "ListItem",
-            "position": 4,
-            "name": "Preterição em Concursos",
-            "url": "https://wa.me/5521972542096?text=Olá, tenho interesse em Preterição em Concursos."
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Preterição em Concursos",
+          "url": "https://wa.me/5521972542096?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20uma%20informa%C3%A7%C3%A3o%20sobre%20Preteri%C3%A7%C3%A3o%20em%20Concursos."
         },
         {
-            "@type": "ListItem",
-            "position": 5,
-            "name": "Defesa de Servidor (PAD)",
-            "url": "https://wa.me/5521972542096?text=Olá, tenho interesse em Defesa de Servidor (PAD)."
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Defesa de Servidor (PAD)",
+          "url": "https://wa.me/5521972542096?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20uma%20informa%C3%A7%C3%A3o%20sobre%20Defesa%20de%20Servidor%20(PAD)."
         },
         {
-            "@type": "ListItem",
-            "position": 6,
-            "name": "Piso do Magistério",
-            "url": "https://wa.me/5521972542096?text=Olá, tenho interesse em Piso do Magistério."
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Piso do Magistério",
+          "url": "https://wa.me/5521972542096?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20uma%20informa%C3%A7%C3%A3o%20sobre%20Piso%20do%20Magist%C3%A9rio."
         }
       ]
     }
@@ -75,7 +78,85 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* Estilos do Rodapé - Concurso Público / Administrativo */
+        .adm-footer-site {
+            background-color: #000000;
+            border-top: 1px solid rgba(144, 108, 22, 0.2);
+            color: rgba(255, 255, 255, 0.7);
+            font-family: 'Inter', sans-serif;
+            padding: 0;
+            position: relative;
+            z-index: 10;
+            text-align: left;
+            height: 555px;
+        }
+
+        .adm-footer-main {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 35px 1.5rem 30px;
+        }
+
+        .adm-footer-nav-col {
+            width: auto;
+            margin-left: 57px;
+        }
+
+        .adm-footer-spec-col {
+            width: auto;
+            margin-left: 29px;
+        }
+
+        div.space-y-5 {
+            margin-top: 0px;
+        }
+
+        @media (max-width: 1023px) {
+            .adm-footer-site {
+                height: auto;
+            }
+            .adm-footer-nav-col, .adm-footer-spec-col {
+                margin: 0;
+                width: auto;
+                padding: 0;
+            }
+        }
+
+        /* Mobile menu */
+        .mobile-menu {
+            transform: translateX(100%);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            background-color: #000000 !important;
+        }
+
+        .mobile-menu.open {
+            transform: translateX(0);
+        }
+
+        /* Hamburger animation */
+        .hamburger span {
+            transition: all 0.3s ease;
+            background-color: white !important;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+    </style>
+    <link rel="stylesheet" href="../cookie-banner.css">
 
     <style>
         :root {
@@ -86,7 +167,9 @@
             --cream: #f8f5f0;
         }
 
-        * { scroll-behavior: smooth; }
+        * {
+            scroll-behavior: smooth;
+        }
 
         body {
             font-family: 'Inter', system-ui, sans-serif;
@@ -95,12 +178,20 @@
             overflow-x: hidden;
         }
 
-        h1, h2, h3, h4, h5, h6 {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             font-family: 'Playfair Display', Georgia, serif;
         }
 
         /* Navigation link hover */
-        .nav-link { position: relative; }
+        .nav-link {
+            position: relative;
+        }
+
         .nav-link::after {
             content: '';
             position: absolute;
@@ -111,7 +202,10 @@
             background: var(--gold-primary);
             transition: width 0.3s ease;
         }
-        .nav-link:hover::after { width: 100%; }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
 
         /* Reveal animation */
         .reveal {
@@ -119,6 +213,7 @@
             transform: translateY(30px);
             transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         }
+
         .reveal.active {
             opacity: 1;
             transform: translateY(0);
@@ -132,126 +227,153 @@
             color: white;
             position: relative;
         }
-        .hero-hub h1 {
+
+        .hero-hub::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 20% 30%, rgba(144, 108, 22, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(144, 108, 22, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hub-title {
             font-size: clamp(2.5rem, 5vw, 4rem);
-            margin-bottom: 1.5rem;
             line-height: 1.1;
+            margin-bottom: 1.5rem;
         }
-        .hero-hub-sub {
-            font-size: 1.1rem;
-            color: rgba(255, 255, 255, 0.7);
+
+        .hub-subtitle {
+            font-size: 1.125rem;
+            color: rgba(255, 255, 255, 0.6);
             max-width: 600px;
-            margin: 0 auto 2rem;
+            margin: 0 auto 3rem;
         }
 
-        /* Breadcrumb */
-        .breadcrumb {
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: 2rem;
-            color: rgba(255, 255, 255, 0.5);
+        /* Service Cards Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: -3rem;
+            position: relative;
+            z-index: 10;
         }
-        .breadcrumb a { color: var(--gold-light); }
-        .breadcrumb a:hover { color: white; }
 
-        /* Hub Grid */
-        .card-servico {
+        .service-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 4px;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s ease;
             display: flex;
             flex-direction: column;
-            padding: 2.5rem;
-            background: white;
             border: 1px solid rgba(144, 108, 22, 0.1);
-            border-radius: 1.5rem;
-            text-decoration: none;
-            color: inherit;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            height: 100%;
         }
-        .card-servico:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.15);
             border-color: var(--gold-primary);
         }
-        .card-servico-titulo {
+
+        .service-icon {
+            color: var(--gold-primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card h3 {
             font-size: 1.5rem;
-            font-weight: 600;
             margin-bottom: 1rem;
             color: var(--dark);
         }
-        .card-servico-desc {
-            font-size: 0.95rem;
-            color: rgba(26, 26, 26, 0.7);
-            margin-bottom: 2rem;
+
+        .service-card p {
+            color: #666;
+            font-size: 0.9375rem;
             line-height: 1.6;
+            margin-bottom: 2rem;
             flex-grow: 1;
         }
-        .card-servico-cta {
-            font-size: 0.9rem;
-            font-weight: 700;
-            color: var(--gold-primary);
-            display: flex;
+
+        .btn-card {
+            display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
-        }
-        .card-servico:hover .card-servico-cta {
             gap: 0.75rem;
+            color: var(--gold-primary);
+            font-weight: 600;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: gap 0.3s ease;
         }
 
-        .card-servico--whatsapp {
-            background-color: #f0f7f1;
-            border-color: #25d36633;
-        }
-        .card-servico--whatsapp .card-servico-cta {
-            color: #128c7e;
+        .btn-card:hover {
+            gap: 1.25rem;
         }
 
-        /* Custom Section Tag */
-        .section-tag {
-            position: relative;
-            padding-left: 3rem;
-        }
-        .section-tag::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 2rem;
-            height: 2px;
-            background: var(--gold-primary);
+        /* CTA Section */
+        .cta-section {
+            background-color: var(--gold-primary);
+            padding: 6rem 1rem;
+            text-align: center;
+            color: white;
+            margin-top: 6rem;
         }
 
-        /* Mobile menu */
-        .mobile-menu {
-            transform: translateX(100%);
-            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            background-color: #000000 !important;
+        .btn-outline-white {
+            border: 1px solid white;
+            padding: 1rem 2.5rem;
+            display: inline-block;
+            transition: all 0.3s ease;
+            font-weight: 500;
         }
-        .mobile-menu.open { transform: translateX(0); }
+
+        .btn-outline-white:hover {
+            background: white;
+            color: var(--gold-primary);
+        }
 
         /* Floating WhatsApp Button */
         .btn-flutuante-whatsapp {
             position: fixed;
-            bottom: 24px;
-            right: 24px;
-            width: 60px;
-            height: 60px;
-            background-color: #25D366;
-            color: #FFF;
+            bottom: 30px;
+            right: 30px;
+            width: 65px;
+            height: 65px;
+            background-color: #25d366;
+            color: #fff;
             border-radius: 50%;
             display: flex;
-            justify-content: center;
             align-items: center;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-            z-index: 1000;
-            transition: all 0.3s;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            z-index: 9999;
+            transition: all 0.3s ease;
+            text-decoration: none;
         }
-        .btn-flutuante-whatsapp:hover { transform: scale(1.1); }
+
+        .btn-flutuante-whatsapp:hover {
+            transform: scale(1.1);
+            background-color: #128c7e;
+        }
+
+        @media (max-width: 768px) {
+            .btn-flutuante-whatsapp {
+                bottom: 20px;
+                right: 20px;
+                width: 55px;
+                height: 55px;
+            }
+        }
     </style>
 </head>
 
-<body class="antialiased">
+<body class="bg-gray-50">
 
     <!-- SVG Icons Sprite -->
     <svg style="display: none;">
@@ -259,39 +381,47 @@
             <symbol id="icon-whatsapp" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
             </symbol>
-            <symbol id="icon-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+            <symbol id="icon-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
             </symbol>
         </defs>
     </svg>
 
-    <!-- Header / Navigation (Copiado do Index e ajustado) -->
-    <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#1a1a1a]/95 backdrop-blur-md">
+    <!-- Header / Navigation -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
         <div class="w-full px-4 sm:px-6 lg:px-12 xl:px-20">
             <div class="flex items-center justify-between h-20 lg:h-24">
+                <!-- Logo -->
                 <a href="../index.html" class="flex items-center gap-3">
                     <img src="../assets/logo-branca-luanda-naiara-consultoria-juridica-especializada.webp"
-                        alt="Luanda Naiara - Advogada (Concurso Público)" class="h-12 lg:h-14 w-auto" width="220" height="56">
+                        alt="Luanda Naiara - Advogada (Concurso Público)" class="h-12 lg:h-14 w-auto" width="220"
+                        height="56">
                 </a>
 
+                <!-- Desktop Navigation -->
                 <nav class="hidden lg:flex items-center gap-8">
-                    <a href="../index.html#sobre" class="nav-link text-white/90 hover:text-white text-sm font-medium transition-colors">Sobre</a>
-                    <a href="../sobre-dra-luanda.html" class="nav-link text-white/90 hover:text-white text-sm font-medium transition-colors">A Doutora</a>
-                    <a href="#" class="nav-link text-[#c9a227] hover:text-[#c9a227] text-sm font-medium transition-colors">Serviços</a>
-                    <a href="../index.html#depoimentos" class="nav-link text-white/90 hover:text-white text-sm font-medium transition-colors">Depoimentos</a>
+                    <a href="../index.html" class="nav-link text-white/90 hover:text-white text-sm font-medium transition-colors">Início</a>
+                    <a href="../servicos/" class="nav-link text-[#c9a227] hover:text-[#c9a227] text-sm font-medium transition-colors">Serviços</a>
+                    <a href="../sobre-dra-luanda.html" class="nav-link text-white/90 hover:text-white text-sm font-medium transition-colors">Sobre a Doutora</a>
                     <a href="../index.html#contato" class="nav-link text-white/90 hover:text-white text-sm font-medium transition-colors">Contato</a>
                 </nav>
 
+                <!-- CTA Button -->
                 <div class="hidden lg:block">
                     <a href="https://wa.me/5521972542096?text=Olá,%20vim%20através%20do%20site%20e%20gostaria%20de%20uma%20informação."
                         target="_blank"
                         class="inline-flex items-center gap-2 bg-[#906c16] hover:bg-[#c9a227] text-white px-6 py-3 rounded-lg font-medium text-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg">
-                        <svg class="icon icon-sm"><use href="#icon-whatsapp" /></svg>
+                        <svg class="w-4 h-4 fill-current">
+                            <use href="#icon-whatsapp" />
+                        </svg>
                         Fale Conosco
                     </a>
                 </div>
 
-                <button id="menuBtn" class="lg:hidden flex flex-col gap-1.5 p-2">
+                <!-- Mobile Menu Button -->
+                <button id="menuBtn" class="lg:hidden hamburger flex flex-col gap-1.5 p-2">
                     <span class="w-6 h-0.5 bg-white block"></span>
                     <span class="w-6 h-0.5 bg-white block"></span>
                     <span class="w-6 h-0.5 bg-white block"></span>
@@ -299,186 +429,337 @@
             </div>
         </div>
 
-        <!-- Mobile Menu -->
-        <div id="menuOverlay" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[45] opacity-0 pointer-events-none transition-opacity duration-500 lg:hidden"></div>
-        <div id="mobileMenu" class="mobile-menu fixed top-0 right-0 w-[85%] sm:w-80 h-full bg-black shadow-2xl lg:hidden z-50 flex flex-col">
+        <!-- Mobile Menu Overlay -->
+        <div id="menuOverlay"
+            class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[45] opacity-0 pointer-events-none transition-opacity duration-500 lg:hidden">
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobileMenu"
+            class="mobile-menu fixed top-0 right-0 w-[85%] sm:w-80 h-full bg-black shadow-2xl lg:hidden z-50 flex flex-col">
             <div class="p-8 flex flex-col h-full">
                 <div class="flex items-center justify-between mb-12">
-                    <img src="../assets/logo-branca-luanda-naiara-consultoria-juridica-especializada.webp" alt="Luanda Naiara" class="h-10 w-auto">
-                    <button id="closeMenu" class="text-white/70 hover:text-white"><svg class="w-8 h-8"><use href="#icon-x" /></svg></button>
+                    <img src="../assets/logo-branca-luanda-naiara-consultoria-juridica-especializada.webp"
+                        alt="Luanda Naiara" class="h-10 w-auto" width="160" height="40">
+                    <button id="closeMenu" class="text-white/70 hover:text-white transition-colors">
+                        <svg class="w-8 h-8">
+                            <use href="#icon-x" />
+                        </svg>
+                    </button>
                 </div>
+
                 <nav class="flex flex-col gap-6">
-                    <a href="../index.html#sobre" class="text-white text-xl font-serif">Sobre</a>
-                    <a href="../sobre-dra-luanda.html" class="text-white text-xl font-serif">A Fundadora</a>
-                    <a href="#" class="text-[#c9a227] text-xl font-serif">Serviços</a>
-                    <a href="../index.html#contato" class="text-white text-xl font-serif">Contato</a>
+                    <a href="../index.html" class="text-white text-xl font-serif hover:text-[#c9a227] transition-colors">Início</a>
+                    <a href="../servicos/" class="text-[#c9a227] text-xl font-serif hover:text-white transition-colors">Serviços</a>
+                    <a href="../sobre-dra-luanda.html" class="text-white text-xl font-serif hover:text-[#c9a227] transition-colors">Sobre a Doutora</a>
+                    <a href="../index.html#contato" class="text-white text-xl font-serif hover:text-[#c9a227] transition-colors">Contato</a>
                 </nav>
+
+                <div class="mt-auto pt-8 border-t border-white/10">
+                    <p class="text-white/40 text-[10px] uppercase tracking-widest mb-4">Atendimento</p>
+                    <a href="https://wa.me/5521972542096?text=Olá,%20vim%20através%20do%20site%20e%20gostaria%20de%20uma%20informação."
+                        target="_blank"
+                        class="w-full justify-center inline-flex items-center gap-2 bg-[#906c16] text-white px-6 py-4 rounded-xl font-bold transition-all hover:bg-[#c9a227]">
+                        <svg class="w-5 h-5">
+                            <use href="#icon-whatsapp" />
+                        </svg>
+                        Falar pelo WhatsApp
+                    </a>
+                </div>
             </div>
         </div>
     </header>
 
-    <!-- Hub Hero -->
+    <!-- Hero Hub -->
     <section class="hero-hub">
-        <div class="max-w-7xl mx-auto px-4">
-            <nav class="breadcrumb" aria-label="breadcrumb">
-                <a href="../index.html">Início</a> / <span>Serviços</span>
-            </nav>
-            <h1 class="reveal">Nossas Especialidades</h1>
-            <p class="hero-hub-sub reveal" style="transition-delay: 100ms;">
-                Soluções jurídicas estratégicas em Direito Administrativo e Concursos Públicos em Campo Grande e todo o Rio de Janeiro.
-            </p>
+        <div class="max-w-4xl mx-auto px-6 reveal">
+            <span class="text-[#906c16] uppercase tracking-[0.3em] text-xs font-bold mb-6 block">Nossas Áreas de
+                Expertise</span>
+            <h1 class="hub-title font-serif">Direito Administrativo & Concurso Público</h1>
+            <p class="hub-subtitle">Oferecemos consultoria jurídica especializada para candidatos e servidores públicos,
+                garantindo que seus direitos sejam preservados em todas as fases do certame e da carreira pública.</p>
         </div>
     </section>
 
-    <!-- Hub Grid -->
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <!-- Card 1: Nomeação e Posse (Com Página) -->
-                <div class="reveal">
-                    <a href="nomeacao-e-posse-concurso-campo-grande-rj/index.html" class="card-servico">
-                        <div class="card-servico-body text-left">
-                            <h2 class="card-servico-titulo">Nomeação e Posse</h2>
-                            <p class="card-servico-desc">Ação de cumprimento para garantir sua nomeação e posse no cargo público conquistado após aprovação.</p>
-                            <span class="card-servico-cta">Ver detalhes →</span>
-                        </div>
-                    </a>
+    <!-- Content Grid -->
+    <section class="max-w-7xl mx-auto px-6 pb-24">
+        <div class="services-grid">
+            <!-- Card 1 -->
+            <div class="service-card reveal" style="transition-delay: 100ms;">
+                <div class="service-icon">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
                 </div>
+                <h3 class="font-serif">Nomeação e Posse</h3>
+                <p>Combata ilegalidades que impedem sua nomeação, como erros na contagem de pontos ou vagas não
+                    preenchidas dentro da validade.</p>
+                <a href="nomeacao-e-posse-concurso-campo-grande-rj/index.html" class="btn-card">Saiba Mais →</a>
+            </div>
 
-                <!-- Card 2: TAF (Com Página) -->
-                <div class="reveal" style="transition-delay: 100ms;">
-                    <a href="liminar-taf-concurso-campo-grande-rj/index.html" class="card-servico">
-                        <div class="card-servico-body text-left">
-                            <h2 class="card-servico-titulo">Liminar para TAF</h2>
-                            <p class="card-servico-desc">Defesa técnica para candidatos reprovados injustamente nos testes de aptidão física.</p>
-                            <span class="card-servico-cta">Ver detalhes →</span>
-                        </div>
-                    </a>
+            <!-- Card 2 -->
+            <div class="service-card reveal" style="transition-delay: 200ms;">
+                <div class="service-icon">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
                 </div>
+                <h3 class="font-serif">Liminar para TAF</h3>
+                <p>Direito de remarcação de testes físicos para candidatos impedidos por força maior ou lesões
+                    comprovadas, garantindo isonomia.</p>
+                <a href="liminar-taf-concurso-campo-grande-rj/index.html" class="btn-card">Saiba Mais →</a>
+            </div>
 
-                <!-- Card 3: Cotas (Com Página) -->
-                <div class="reveal" style="transition-delay: 200ms;">
-                    <a href="cotas-e-heteroidentificacao-concurso-rj/index.html" class="card-servico">
-                        <div class="card-servico-body text-left">
-                            <h2 class="card-servico-titulo">Cotas e Heteroidentificação</h2>
-                            <p class="card-servico-desc">Assistência jurídica em casos de indeferimento de cotas raciais e processos de heteroidentificação.</p>
-                            <span class="card-servico-cta">Ver detalhes →</span>
-                        </div>
-                    </a>
+            <!-- Card 3 -->
+            <div class="service-card reveal" style="transition-delay: 300ms;">
+                <div class="service-icon">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
                 </div>
+                <h3 class="font-serif">Cotas & Heteroidentificação</h3>
+                <p>Assessoria jurídica em casos de exclusão injusta de candidatos cotistas por critérios subjetivos da
+                    banca examinadora.</p>
+                <a href="cotas-e-heteroidentificacao-concurso-rj/index.html" class="btn-card">Saiba Mais →</a>
+            </div>
 
-                <!-- Card 4: Preterição (WhatsApp) -->
-                <div class="reveal" style="transition-delay: 300ms;">
-                    <a href="https://wa.me/5521972542096?text=Olá, tenho interesse em Preterição em Concursos." target="_blank" class="card-servico card-servico--whatsapp">
-                        <div class="card-servico-body text-left">
-                            <h2 class="card-servico-titulo">Preterição em Concursos</h2>
-                            <p class="card-servico-desc">Defesa contra a nomeação de candidatos com nota inferior ou contratações temporárias ilegais.</p>
-                            <span class="card-servico-cta">Solicitar via WhatsApp →</span>
-                        </div>
-                    </a>
+            <!-- Card 4 (WhatsApp) -->
+            <div class="service-card reveal" style="transition-delay: 400ms;">
+                <div class="service-icon">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
                 </div>
+                <h3 class="font-serif">Preterição em Concursos</h3>
+                <p>Ação judicial para candidatos preteridos por contratações temporárias ou terceirizações enquanto há
+                    lista de aprovados vigente.</p>
+                <a href="https://wa.me/5521972542096?text=Olá, tenho interesse em Preterição em Concursos."
+                    target="_blank" class="btn-card">Consultar Especialista →</a>
+            </div>
 
-                <!-- Card 5: Defesa de Servidor (WhatsApp) -->
-                <div class="reveal" style="transition-delay: 400ms;">
-                    <a href="https://wa.me/5521972542096?text=Olá, tenho interesse em Defesa de Servidor (PAD)." target="_blank" class="card-servico card-servico--whatsapp">
-                        <div class="card-servico-body text-left">
-                            <h2 class="card-servico-titulo">Defesa de Servidor (PAD)</h2>
-                            <p class="card-servico-desc">Acompanhamento em Processos Administrativos Disciplinares e defesas em Sindicâncias.</p>
-                            <span class="card-servico-cta">Solicitar via WhatsApp →</span>
-                        </div>
-                    </a>
+            <!-- Card 5 (WhatsApp) -->
+            <div class="service-card reveal" style="transition-delay: 500ms;">
+                <div class="service-icon">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                    </svg>
                 </div>
+                <h3 class="font-serif">Piso do Magistério</h3>
+                <p>Regularização do vencimento base de professores conforme o Piso Nacional, incluindo cobrança de
+                    retroativos não pagos.</p>
+                <a href="https://wa.me/5521972542096?text=Olá, tenho interesse em Piso do Magistério." target="_blank"
+                    class="btn-card">Consultar Especialista →</a>
+            </div>
 
-                <!-- Card 6: Piso do Magistério (WhatsApp) -->
-                <div class="reveal" style="transition-delay: 500ms;">
-                    <a href="https://wa.me/5521972542096?text=Olá, tenho interesse em Piso do Magistério." target="_blank" class="card-servico card-servico--whatsapp">
-                        <div class="card-servico-body text-left">
-                            <h2 class="card-servico-titulo">Piso do Magistério</h2>
-                            <p class="card-servico-desc">Consultoria especializada para garantir o pagamento do piso salarial nacional dos professores.</p>
-                            <span class="card-servico-cta">Solicitar via WhatsApp →</span>
-                        </div>
-                    </a>
+            <!-- Card 6 (WhatsApp) -->
+            <div class="service-card reveal" style="transition-delay: 600ms;">
+                <div class="service-icon">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    </svg>
                 </div>
-
+                <h3 class="font-serif">Defesa de Servidor (PAD)</h3>
+                <p>Assessoria completa em Processos Administrativos Disciplinares, garantindo ampla defesa, contraditório
+                    e isenção na análise.</p>
+                <a href="https://wa.me/5521972542096?text=Olá, tenho interesse em Defesa de Servidor (PAD)."
+                    target="_blank" class="btn-card">Consultar Especialista →</a>
             </div>
         </div>
     </section>
 
-    <!-- Hub CTA Section -->
-    <section class="py-20 bg-cream border-t border-gold-primary/10">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-serif mb-6 reveal">Não encontrou o que procura?</h2>
-            <p class="text-lg opacity-80 mb-10 reveal" style="transition-delay: 100ms;">Estamos prontos para analisar seu caso individualmente e oferecer a melhor estratégia jurídica.</p>
-            <a href="https://wa.me/5521972542096?text=Olá, gostaria de mais informações sobre os serviços."
-               target="_blank"
-               class="inline-flex items-center gap-3 bg-[#906c16] hover:bg-[#c9a227] text-white px-10 py-5 rounded-xl font-bold transition-all shadow-xl hover:-translate-y-1 reveal" style="transition-delay: 200ms;">
-                <svg class="w-6 h-6"><use href="#icon-whatsapp" /></svg>
-                Falar pelo WhatsApp
+    <!-- Final CTA -->
+    <section class="cta-section">
+        <div class="max-w-4xl mx-auto px-6 reveal">
+            <h2 class="text-3xl md:text-5xl mb-8 font-serif">Não deixe que erros administrativos barrem seu futuro.</h2>
+            <p class="text-white/80 text-lg mb-12">Nossa equipe está pronta para analisar seu caso de forma gratuita e
+                orientar sobre as melhores medidas jurídicas.</p>
+            <a href="https://wa.me/5521972542096?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20uma%20informa%C3%A7%C3%A3o." target="_blank" class="btn-outline-white">
+                Agendar Consulta Gratuita agora
             </a>
         </div>
     </section>
 
-    <!-- Footer (Copiado do Index e ajustado) -->
-    <footer class="bg-black py-20 lg:py-32 overflow-hidden">
-        <div class="w-full px-4 sm:px-6 lg:px-12 xl:px-20">
+    <!-- RODAPÉ -->
+    <footer class="adm-footer-site relative pt-20 pb-10 bg-[#1a1a1a] overflow-hidden">
+        <!-- Decoration element -->
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#906c16]/50 to-transparent">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 adm-footer-main">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
-                <!-- Coluna 1: Logo e Descrição -->
-                <div class="space-y-8">
+                <!-- Coluna 1: Marca & Missão -->
+                <div class="space-y-6">
                     <img src="../assets/logo-branca-luanda-naiara-consultoria-juridica-especializada.webp"
-                        alt="Luanda Naiara - Advogada (Concurso Público)" class="h-16 lg:h-20 w-auto" width="280" height="80">
-                    <p class="text-white/50 text-sm leading-relaxed max-w-sm">
-                        Especialista em Direito Administrativo e Concursos Públicos. Atuação pautada na ética e na busca incansável pelos direitos dos servidores e candidatos.
+                        alt="Luanda Naiara - Advogada (Concurso Público)" class="h-14 w-auto brightness-110">
+                    <p class="text-white/60 text-sm leading-relaxed max-w-xs">
+                        Escritório especializado em Direito Administrativo e Concursos Públicos. Atuamos com excelência técnica e foco na garantia dos seus direitos fundamentais.
                     </p>
+                    <div class="flex items-center gap-4">
+                        <a href="https://www.instagram.com/luandanaiaraadv/" target="_blank" rel="noopener noreferrer"
+                            class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/70 hover:bg-[#906c16] hover:text-white hover:border-[#906c16] transition-all duration-300">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                        </a>
+                        <a href="https://br.linkedin.com/in/dra-luanda-naiara-ceo-de-escrit%C3%B3rio-de-advocacia-08919073"
+                            target="_blank" rel="noopener noreferrer"
+                            class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/70 hover:bg-[#906c16] hover:text-white hover:border-[#906c16] transition-all duration-300">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/luandanaiaraadv/" target="_blank" rel="noopener noreferrer"
+                            class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/70 hover:bg-[#906c16] hover:text-white hover:border-[#906c16] transition-all duration-300">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Coluna 2: Links Rápidos -->
-                <div class="lg:pl-12">
+                <!-- Coluna 2: Navegação -->
+                <div class="adm-footer-nav-col">
                     <h4 class="font-serif text-white text-lg font-semibold mb-8 relative inline-block">
                         Links Rápidos
                         <span class="absolute -bottom-2 left-0 w-8 h-0.5 bg-[#906c16]"></span>
                     </h4>
                     <ul class="space-y-4">
-                        <li><a href="../index.html" class="text-white/60 hover:text-[#c9a227] transition-colors text-sm">Página Inicial</a></li>
-                        <li><a href="../sobre-dra-luanda.html" class="text-white/60 hover:text-[#c9a227] transition-colors text-sm">A Doutora</a></li>
-                        <li><a href="../index.html#contato" class="text-white/60 hover:text-[#c9a227] transition-colors text-sm">Agendar Consulta</a></li>
+                        <li><a href="../index.html" class="text-white/60 hover:text-[#c9a227] transition-colors text-sm flex items-center gap-2 group"><span class="w-1.5 h-1.5 rounded-full bg-[#906c16]/30 group-hover:bg-[#906c16] transition-colors"></span> Início</a></li>
+                        <li><a href="../servicos/" class="text-white/60 hover:text-[#c9a227] transition-colors text-sm flex items-center gap-2 group"><span class="w-1.5 h-1.5 rounded-full bg-[#906c16]/30 group-hover:bg-[#906c16] transition-colors"></span> Serviços</a></li>
+                        <li><a href="../sobre-dra-luanda.html" class="text-white/60 hover:text-[#c9a227] transition-colors text-sm flex items-center gap-2 group"><span class="w-1.5 h-1.5 rounded-full bg-[#906c16]/30 group-hover:bg-[#906c16] transition-colors"></span> Sobre a Doutora</a></li>
+                        <li><a href="../index.html#contato" class="text-white/60 hover:text-[#c9a227] transition-colors text-sm flex items-center gap-2 group"><span class="w-1.5 h-1.5 rounded-full bg-[#906c16]/30 group-hover:bg-[#906c16] transition-colors"></span> Contato</a></li>
                     </ul>
                 </div>
 
-                <!-- Coluna 3: Especialidades -->
-                <div class="lg:pl-8">
+                <!-- Coluna 3: Áreas de Atuação -->
+                <div class="adm-footer-spec-col">
                     <h4 class="font-serif text-white text-lg font-semibold mb-8 relative inline-block">
                         Especialidades
                         <span class="absolute -bottom-2 left-0 w-8 h-0.5 bg-[#906c16]"></span>
                     </h4>
                     <ul class="space-y-4">
-                        <li><a href="#" class="text-white/60 hover:text-[#c9a227] transition-colors text-sm">Nomeação e Posse</a></li>
-                        <li><a href="#" class="text-white/60 hover:text-[#c9a227] transition-colors text-sm">Liminar para TAF</a></li>
-                        <li><a href="#" class="text-white/60 hover:text-[#c9a227] transition-colors text-sm">Heteroidentificação</a></li>
+                        <li><a href="../index.html#servicos"
+                                class="text-white/60 hover:text-[#c9a227] transition-colors text-sm">Nomeação e Posse</a></li>
+                        <li><a href="../index.html#servicos"
+                                class="text-white/60 hover:text-[#c9a227] transition-colors text-sm">Direito Administrativo</a></li>
+                        <li><a href="../index.html#servicos"
+                                class="text-white/60 hover:text-[#c9a227] transition-colors text-sm">Cotas Raciais</a>
+                        </li>
+                        <li><a href="../index.html#servicos"
+                                class="text-white/60 hover:text-[#c9a227] transition-colors text-sm">Defesa de Servidor</a></li>
+                        <li><a href="../index.html#servicos"
+                                class="text-white/60 hover:text-[#c9a227] transition-colors text-sm">Piso do Magistério</a></li>
                     </ul>
                 </div>
 
                 <!-- Coluna 4: Contato -->
                 <div class="space-y-6">
                     <h4 class="font-serif text-white text-lg font-semibold mb-8 relative inline-block">
-                        Redes Sociais
+                        Contato
                         <span class="absolute -bottom-2 left-0 w-8 h-0.5 bg-[#906c16]"></span>
                     </h4>
-                    <div class="flex gap-4">
-                        <a href="https://www.instagram.com/luandanaiaraadv/" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/50 hover:bg-[#906c16] hover:text-white transition-all">Instagram</a>
-                        <a href="https://www.facebook.com/luandanaiaraadv/" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/50 hover:bg-[#906c16] hover:text-white transition-all">FB</a>
+                    <div class="space-y-5">
+                        <!-- Nome da Empresa -->
+                        <a href="https://share.google/yKxKbfZrGtUXprTmP" target="_blank"
+                            class="flex items-center gap-3 group">
+                            <div
+                                class="w-8 h-8 rounded bg-[#906c16]/10 flex items-center justify-center text-[#906c16] group-hover:bg-[#906c16] group-hover:text-white transition-all">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    stroke-width="2">
+                                    <path
+                                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <span
+                                class="text-white text-sm font-semibold group-hover:text-[#c9a227] transition-colors">Luanda
+                                Naiara - Advogada (Concurso Público)</span>
+                        </a>
+                        <!-- Endereço -->
+                        <a href="https://www.google.com/maps/dir//Luanda+Naiara+-+Advogada+(Concurso+Público)+-+Estr.+da+Cachamorra,+350+-+Bloco+03,+Sala+403+-+Campo+Grande,+Rio+de+Janeiro+-+RJ,+23040-150"
+                            target="_blank" class="flex items-start gap-3 group">
+                            <div
+                                class="w-8 h-8 rounded bg-[#906c16]/10 flex items-center justify-center text-[#906c16] flex-shrink-0 group-hover:bg-[#906c16] group-hover:text-white transition-all">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
+                            <p class="text-white/60 text-sm leading-snug group-hover:text-white transition-colors">
+                                Estr. da Cachamorra, 350 - Bloco 03, Sala 403, Campo Grande, RJ
+                            </p>
+                        </a>
+                        <!-- WhatsApp Link Discreto -->
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-8 h-8 rounded bg-[#906c16]/10 flex items-center justify-center text-[#906c16]">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                                </svg>
+                            </div>
+                            <a href="https://wa.me/5521972542096?text=Olá,%20vim%20através%20do%20site%20e%20gostaria%20de%20uma%20informação."
+                                target="_blank"
+                                class="text-white/60 hover:text-white transition-colors text-sm font-medium">
+                                (21) 97254-2096
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Bottom Credits -->
-            <div class="mt-20 pt-8 border-t border-white/5 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-6">
-                <p class="text-white/30 text-[10px] md:text-xs">
-                    © 2026 Luanda Naiara - Advogada (Concurso Público) | OAB/RJ 228701. Todos os direitos reservados.
-                </p>
-                <div class="flex gap-4">
-                    <a href="../termos-e-condicoes.html" class="text-white/30 hover:text-white text-[10px] md:text-xs">Termos</a>
-                    <a href="../politica-de-privacidade.html" class="text-white/30 hover:text-white text-[10px] md:text-xs">Privacidade</a>
+            <div class="mt-20 pt-8 border-t border-white/5 space-y-2">
+                <!-- Copyright & Agency Row -->
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                    <p class="text-white/30 text-[10px] md:text-xs">
+                        © 2026 <a href="https://share.google/yKxKbfZrGtUXprTmP" target="_blank" class="hover:text-white transition-colors">Luanda Naiara - Advogada (Concurso Público)</a> | OAB/RJ 228701. Todos os direitos
+                        reservados.
+                    </p>
+                    <span class="text-white/30 text-[10px] md:text-xs">
+                        Desenvolvido por <a href="https://www.ag5agencia.com.br" target="_blank"
+                            class="text-[#906c16] hover:text-[#c9a227] transition-colors font-medium">AG5 Agência</a>
+                    </span>
+                </div>
+
+                <!-- Legal Links Row (Below Credits) -->
+                <div class="flex flex-wrap items-center justify-center md:justify-start gap-x-4 gap-y-1">
+                    <a href="#" id="shared-ck-prefs-link"
+                        class="text-white/30 hover:text-white text-[10px] md:text-xs transition-colors flex items-center gap-2 group">
+                        <span
+                            class="inline-flex items-center w-[28px] h-[14px] bg-white/5 rounded-full p-[2px] border border-white/10 relative">
+                            <span class="text-[6px] text-green-400/50 ml-0.5 mt-[-1px]">✓</span>
+                            <span class="text-[6px] text-red-400/50 ml-auto mr-0.5 mt-[-1px]">✕</span>
+                            <span
+                                class="absolute left-[15px] w-[10px] h-[10px] bg-[#906c16] rounded-full shadow-sm group-hover:bg-[#c9a227] transition-colors"></span>
+                        </span>
+                        Cookie
+                    </a>
+                    <span class="text-white/10 text-[10px] md:text-xs">|</span>
+                    <a href="../termos-e-condicoes.html"
+                        class="text-white/30 hover:text-white text-[10px] md:text-xs transition-colors">Termos de
+                        Uso</a>
+                    <span class="text-white/10 text-[10px] md:text-xs">|</span>
+                    <a href="../politica-de-privacidade.html"
+                        class="text-white/30 hover:text-white text-[10px] md:text-xs transition-colors">Política de
+                        Privacidade</a>
                 </div>
             </div>
         </div>
@@ -487,41 +768,71 @@
     <!-- WhatsApp Float Button -->
     <a href="https://wa.me/5521972542096?text=Olá,%20vim%20através%20do%20site%20e%20gostaria%20de%20uma%20informação."
         target="_blank" class="btn-flutuante-whatsapp" role="button" aria-label="Falar pelo WhatsApp">
-        <svg viewBox="0 0 16 16" width="32" height="32" fill="currentColor"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
+        <svg viewBox="0 0 16 16" width="32" height="32" fill="currentColor">
+            <path
+                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+        </svg>
     </a>
 
-    <!-- Scripts (Reveal Animation) -->
+    <script src="../cookie-banner.js"></script>
     <script>
-        const revealElements = document.querySelectorAll('.reveal');
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                }
-            });
-        }, { threshold: 0.1 });
-        revealElements.forEach(el => revealObserver.observe(el));
-
-        // Mobile Menu toggle
+        // Header scroll effect
+        const header = document.getElementById('header');
         const menuBtn = document.getElementById('menuBtn');
         const closeMenu = document.getElementById('closeMenu');
         const mobileMenu = document.getElementById('mobileMenu');
         const menuOverlay = document.getElementById('menuOverlay');
 
-        function toggleMenu(isOpen) {
-            if (isOpen) {
-                mobileMenu.classList.add('open');
-                menuOverlay.classList.remove('pointer-events-none');
-                menuOverlay.classList.add('opacity-100');
+        function updateHeader() {
+            if (window.scrollY > 50) {
+                header.classList.add('bg-[#1a1a1a]/95', 'backdrop-blur-md', 'shadow-xl');
+                header.classList.remove('bg-transparent');
             } else {
-                mobileMenu.classList.remove('open');
-                menuOverlay.classList.add('pointer-events-none');
-                menuOverlay.classList.remove('opacity-100');
+                header.classList.remove('bg-[#1a1a1a]/95', 'backdrop-blur-md', 'shadow-xl');
+                header.classList.add('bg-transparent');
             }
         }
 
-        menuBtn.addEventListener('click', () => toggleMenu(true));
-        closeMenu.addEventListener('click', () => toggleMenu(false));
+        window.addEventListener('scroll', updateHeader);
+        updateHeader(); // Initial check
+
+        // Mobile menu toggle
+        function toggleMenu() {
+            mobileMenu.classList.toggle('open');
+            menuOverlay.classList.toggle('opacity-0');
+            menuOverlay.classList.toggle('pointer-events-none');
+            menuBtn.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+        }
+
+        if (menuBtn) menuBtn.addEventListener('click', toggleMenu);
+        if (closeMenu) closeMenu.addEventListener('click', toggleMenu);
+        if (menuOverlay) menuOverlay.addEventListener('click', toggleMenu);
+
+        // Close menu on link click
+        if (mobileMenu) {
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (mobileMenu.classList.contains('open')) toggleMenu();
+                });
+            });
+        }
+
+        // Other scripts
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
+        }, { threshold: 0.1 });
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // Ativar o link de preferências de cookie do rodapé
+        const ckFooterLink = document.querySelector('#shared-ck-prefs-link');
+        if (ckFooterLink && typeof openCookieBanner === 'function') {
+            ckFooterLink.addEventListener('click', (e) => {
+                e.preventDefault();
+                openCookieBanner();
+            });
+        }
     </script>
 </body>
 
