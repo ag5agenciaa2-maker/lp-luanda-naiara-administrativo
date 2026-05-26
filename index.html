@@ -33,10 +33,10 @@
     <meta property="og:description"
         content="Escritório com equipe majoritariamente feminina, especializado em Direito Administrativo. 90% de eficiência nos processos.">
     <meta property="og:image"
-        content="http://www.luandanaiara.ag5agencia.site/assets/dra-luanda-naiara-advogada-concurso-publico-campo-grande-rj%20(1).webp">
+        content="https://www.luandanaiara.ag5agencia.site/assets/dra-luanda-naiara-advogada-concurso-publico-campo-grande-rj%20(1).webp">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:url" content="http://www.luandanaiara.ag5agencia.site">
+    <meta property="og:url" content="https://www.luandanaiara.ag5agencia.site">
     <meta property="og:locale" content="pt_BR">
 
     <!-- Twitter Cards -->
@@ -45,7 +45,7 @@
     <meta name="twitter:description"
         content="Escritório com equipe majoritariamente feminina, especializado em Direito Administrativo e Concurso Público.">
     <meta name="twitter:image"
-        content="http://www.luandanaiara.ag5agencia.site/assets/dra-luanda-naiara-advogada-concurso-publico-campo-grande-rj%20(1).webp">
+        content="https://www.luandanaiara.ag5agencia.site/assets/dra-luanda-naiara-advogada-concurso-publico-campo-grande-rj%20(1).webp">
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="assets/Favicon-luanda-naiara-consultoria-juridica-especializada.ico">
@@ -58,16 +58,16 @@
         {
           "@type": "LegalService",
           "name": "Luanda Naiara - Advogada (Concurso Público)",
-          "image": "http://www.luandanaiara.ag5agencia.site/assets/dra-luanda-naiara-advogada-concurso-publico-campo-grande-rj%20(1).webp",
-          "@id": "http://www.luandanaiara.ag5agencia.site/#organization",
-          "url": "http://www.luandanaiara.ag5agencia.site",
+          "image": "https://www.luandanaiara.ag5agencia.site/assets/dra-luanda-naiara-advogada-concurso-publico-campo-grande-rj%20(1).webp",
+          "@id": "https://www.luandanaiara.ag5agencia.site/#organization",
+          "url": "https://www.luandanaiara.ag5agencia.site",
           "telephone": "+5521972542096",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Estrada da Cachamorra, 350, Bloco 03, Sala 403",
             "addressLocality": "Campo Grande",
             "addressRegion": "RJ",
-            "postalCode": "23076-060",
+            "postalCode": "23040-150",
             "addressCountry": "BR"
           },
           "geo": {
@@ -190,7 +190,7 @@
             }
         }
 
-        /* Floating WhatsApp Button */
+        /* Floating WhatsApp Button — oculto até passar pela 3ª seção */
         .btn-flutuante-whatsapp {
             position: fixed;
             bottom: 30px;
@@ -205,8 +205,17 @@
             justify-content: center;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
             z-index: 9999;
-            transition: all 0.3s ease;
             text-decoration: none;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(20px) scale(0.9);
+            transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease;
+        }
+
+        .btn-flutuante-whatsapp.visible {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0) scale(1);
         }
 
         .btn-flutuante-whatsapp:hover {
@@ -1343,17 +1352,26 @@
             <!-- Infinite Scroll Gallery -->
             <div class="relative w-full overflow-hidden reveal">
                 <div class="marquee-track flex gap-4">
-                    <!-- Set 1 -->
+                    <!-- Set 1 (9 itens, com 3 fotos da Comissão OAB intercaladas) -->
                     <img src="assets/dra-luanda-naiara-advogada-concurso-publico-campo-grande-rj (1).webp"
                         class="h-[250px] lg:h-[350px] w-auto rounded-xl shadow-md object-cover"
                         alt="Dra Luanda Naiara em atendimento jurídico" width="500" height="350" loading="lazy">
+                    <img src="assets/dra-luanda-na-comissao-oab (2).webp"
+                        class="h-[250px] lg:h-[350px] w-auto rounded-xl shadow-md object-cover"
+                        alt="Dra Luanda Naiara na Comissão de Direito Administrativo da OAB/RJ" width="500" height="350" loading="lazy">
                     <img src="assets/advogada-luanda-naiara-escritorio-direito-administrativo-rj (1).webp"
                         class="h-[250px] lg:h-[350px] w-auto rounded-xl shadow-md object-cover"
                         alt="Interior do escritório Luanda Naiara Advocacia" width="500" height="350" loading="lazy">
+                    <img src="assets/dra-luanda-na-comissao-oab (3).webp"
+                        class="h-[250px] lg:h-[350px] w-auto rounded-xl shadow-md object-cover"
+                        alt="Dra Luanda Naiara presidente da Comissão de Direito Administrativo OAB/RJ" width="500" height="350" loading="lazy">
                     <img src="assets/dra-luanda-naiara-advogada-concurso-publico-campo-grande-rj (8).webp"
                         class="h-[250px] lg:h-[350px] w-auto rounded-xl shadow-md object-cover"
                         alt="Dra Luanda Naiara especialista em direito administrativo" width="500" height="350"
                         loading="lazy">
+                    <img src="assets/dra-luanda-na-comissao-oab (8).webp"
+                        class="h-[250px] lg:h-[350px] w-auto rounded-xl shadow-md object-cover"
+                        alt="Dra Luanda Naiara em evento institucional da OAB/RJ" width="500" height="350" loading="lazy">
                     <img src="assets/dra-luanda-naiara-advogada-concurso-publico-campo-grande-rj (13).webp"
                         class="h-[250px] lg:h-[350px] w-auto rounded-xl shadow-md object-cover"
                         alt="Recepção do escritório Luanda Naiara" width="500" height="350" loading="lazy">
@@ -1363,17 +1381,26 @@
                     <img src="assets/dra-luanda-naiara-advogada-concurso-publico-campo-grande-rj (4).webp"
                         class="h-[250px] lg:h-[350px] w-auto rounded-xl shadow-md object-cover"
                         alt="Dra Luanda Naiara fundadora" width="500" height="350" loading="lazy">
-                    <!-- Duplicate for infinite effect -->
+                    <!-- Set 2 (duplicado para loop infinito) -->
                     <img src="assets/dra-luanda-naiara-advogada-concurso-publico-campo-grande-rj (1).webp"
                         class="h-[250px] lg:h-[350px] w-auto rounded-xl shadow-md object-cover"
                         alt="Dra Luanda Naiara em atendimento jurídico" width="500" height="350" loading="lazy">
+                    <img src="assets/dra-luanda-na-comissao-oab (2).webp"
+                        class="h-[250px] lg:h-[350px] w-auto rounded-xl shadow-md object-cover"
+                        alt="Dra Luanda Naiara na Comissão de Direito Administrativo da OAB/RJ" width="500" height="350" loading="lazy">
                     <img src="assets/advogada-luanda-naiara-escritorio-direito-administrativo-rj (1).webp"
                         class="h-[250px] lg:h-[350px] w-auto rounded-xl shadow-md object-cover"
                         alt="Interior do escritório Luanda Naiara Advocacia" width="500" height="350" loading="lazy">
+                    <img src="assets/dra-luanda-na-comissao-oab (3).webp"
+                        class="h-[250px] lg:h-[350px] w-auto rounded-xl shadow-md object-cover"
+                        alt="Dra Luanda Naiara presidente da Comissão de Direito Administrativo OAB/RJ" width="500" height="350" loading="lazy">
                     <img src="assets/dra-luanda-naiara-advogada-concurso-publico-campo-grande-rj (8).webp"
                         class="h-[250px] lg:h-[350px] w-auto rounded-xl shadow-md object-cover"
                         alt="Dra Luanda Naiara especialista em direito administrativo" width="500" height="350"
                         loading="lazy">
+                    <img src="assets/dra-luanda-na-comissao-oab (8).webp"
+                        class="h-[250px] lg:h-[350px] w-auto rounded-xl shadow-md object-cover"
+                        alt="Dra Luanda Naiara em evento institucional da OAB/RJ" width="500" height="350" loading="lazy">
                     <img src="assets/dra-luanda-naiara-advogada-concurso-publico-campo-grande-rj (13).webp"
                         class="h-[250px] lg:h-[350px] w-auto rounded-xl shadow-md object-cover"
                         alt="Recepção do escritório Luanda Naiara" width="500" height="350" loading="lazy">
@@ -1529,10 +1556,10 @@
     <section id="livro" class="py-20 lg:py-32 bg-white">
         <div class="w-full px-4 sm:px-6 lg:px-12 xl:px-20">
             <div
-                class="bg-dark rounded-3xl p-8 lg:p-20 flex flex-col lg:flex-row items-center gap-12 text-white reveal shadow-2xl overflow-hidden relative">
+                class="bg-gradient-to-br from-[#7a5a28] via-[#5c4419] to-[#7a5a28] rounded-3xl p-8 lg:p-20 flex flex-col lg:flex-row items-center gap-12 text-white reveal shadow-2xl overflow-hidden relative border border-[#c9a227]/25">
                 <!-- Decorative Blur -->
-                <div class="absolute -top-20 -right-20 w-64 h-64 bg-gold/10 rounded-full blur-3xl"></div>
-                <div class="absolute -bottom-20 -left-20 w-64 h-64 bg-gold/5 rounded-full blur-3xl"></div>
+                <div class="absolute -top-20 -right-20 w-64 h-64 bg-[#e0c557]/15 rounded-full blur-3xl"></div>
+                <div class="absolute -bottom-20 -left-20 w-64 h-64 bg-[#c9a227]/10 rounded-full blur-3xl"></div>
 
                 <div class="lg:w-1/3">
                     <img src="assets/ebook-caminhos-para-a-posse-dra-luanda-naiara-advogada.webp"
@@ -1542,14 +1569,14 @@
                 </div>
                 <div class="lg:w-2/3">
                     <span
-                        class="text-gold text-sm font-semibold uppercase tracking-widest mb-4 inline-block tracking-[0.2em] animate-pulse">Ebook
+                        class="text-[#e0c557] text-sm font-semibold uppercase tracking-widest mb-4 inline-block tracking-[0.2em] animate-pulse">Ebook
                         Gratuito</span>
                     <h2 class="text-3xl lg:text-5xl font-serif mb-6 leading-tight">Obra: Caminhos <br><span
-                            class="text-gold italic">para a Posse</span></h2>
-                    <p class="text-white/70 text-lg mb-10 leading-relaxed">
+                            class="text-[#e0c557] italic">para a Posse</span></h2>
+                    <p class="text-white/85 text-lg mb-10 leading-relaxed">
                         Dra. Luanda compilou mais de uma década de estratégias vitoriosas em seu livro digital, guiando
                         milhares de candidatos através dos labirintos jurídicos dos concursos públicos no Brasil.
-                        <strong class="text-gold">Baixe agora gratuitamente.</strong>
+                        <strong class="text-[#e0c557]">Baixe agora gratuitamente.</strong>
                     </p>
                     <a href="https://www.ebook.luandanaiaraadv.com.br/caminhos-para-a-posse" target="_blank"
                         class="btn-premium-primary inline-flex items-center justify-center gap-3 text-white px-10 py-5 rounded-xl">
@@ -2157,9 +2184,9 @@
                             Estrada da Cachamorra, 350<br>
                             Bloco 03, Sala 403<br>
                             Campo Grande, RJ<br>
-                            CEP: 23076-060
+                            CEP: 23040-150
                         </p>
-                        <a href="https://www.google.com/maps/dir//Estrada+da+Cachamorra,+350+-+Campo+Grande,+Rio+de+Janeiro+-+RJ,+23076-060"
+                        <a href="https://www.google.com/maps/dir//Estrada+da+Cachamorra,+350+-+Campo+Grande,+Rio+de+Janeiro+-+RJ,+23040-150"
                             target="_blank"
                             class="mt-4 inline-flex items-center gap-2 bg-[#906c16] text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-[#c9a227] transition-all">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
@@ -2215,7 +2242,7 @@
                 <div class="lg:col-span-2 reveal" style="transition-delay: 100ms;">
                     <div class="h-full min-h-[400px] rounded-2xl overflow-hidden shadow-lg">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.2960411907763!2d-43.5575!3d-22.9068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9be1799936779d%3A0x8e5c5c5c5c5c5c5c!2sEstr.%20da%20Cachamorra%2C%20350%20-%20Campo%20Grande%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2023076-060!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.2960411907763!2d-43.5575!3d-22.9068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9be1799936779d%3A0x8e5c5c5c5c5c5c5c!2sEstr.%20da%20Cachamorra%2C%20350%20-%20Campo%20Grande%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2023040-150!5e0!3m2!1spt-BR!2sbr!4v1234567890"
                             width="100%" height="100%" style="border:0; min-height: 400px;" allowfullscreen=""
                             loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
@@ -2567,6 +2594,22 @@
 
     <!-- Scripts -->
     <script>
+        // WhatsApp flutuante — aparece apenas após passar pela 3ª seção (#dor)
+        (function () {
+            const waBtn = document.querySelector('.btn-flutuante-whatsapp');
+            const trigger = document.getElementById('sobre'); // 4ª seção (início = fim da 3ª)
+            if (!waBtn || !trigger) return;
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        waBtn.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: '0px 0px -20% 0px' });
+            observer.observe(trigger);
+        })();
+
         // Header scroll behavior
         const header = document.getElementById('header');
         let lastScroll = 0;
