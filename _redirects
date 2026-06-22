@@ -1,0 +1,8 @@
+# Cloudflare Pages — Redirects 301 para canonicalizar URLs sem .html
+# Garante que qualquer acesso aos .html antigos vai pra versão clean
+
+/sobre-dra-luanda.html /sobre-dra-luanda 301
+/politica-de-privacidade.html /politica-de-privacidade 301
+/termos-e-condicoes.html /termos-e-condicoes 301
+/direito-previdenciario/servicos.html /direito-previdenciario/servicos 301
+/direito-previdenciario/sobre-dra-luanda.html /direito-previdenciario/sobre-dra-luanda 301
