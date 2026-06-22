@@ -85,7 +85,7 @@ CID	13932056431739212801
 Business Profile ID	10595736323529711566
 Address	Estr. da Cachamorra, 350 - Bloco 03, Sala 403 - Campo Grande, Rio de Janeiro - RJ, 23040-150
 Phone	021972542096
-Website	http://www.luandanaiaraadv.com.br/
+Website	https://www.luandanaiaraadv.com.br/
 Reviews	309
 Rating	4.9
 Link Perfik Google https://www.google.com/search?kgmid=/g/11t81p_fkm

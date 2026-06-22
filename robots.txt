@@ -14,7 +14,7 @@ User-agent: Google-Extended
 Allow: /
 
 # Sitemap
-Sitemap: https://www.luandanaiara.ag5agencia.site/sitemap.xml
+Sitemap: https://www.luandanaiaraadv.com.br/sitemap.xml
 
 # Restricted Areas
 Disallow: /cgi-bin/

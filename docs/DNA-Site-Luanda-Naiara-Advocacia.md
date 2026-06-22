@@ -1274,7 +1274,7 @@ window.open(waUrl, '_blank');
 | Geo Tags | `<meta name="geo.region">` | `BR-RJ`, `geo.placename`: Campo Grande, Rio de Janeiro |
 | Open Graph | 8 tags | og:type, title, description, image (1200×630), url, locale |
 | Twitter Cards | 4 tags | summary_large_image |
-| Canonical | `<link rel="canonical">` | `https://www.luandanaiara.ag5agencia.site/` |
+| Canonical | `<link rel="canonical">` | `https://www.luandanaiaraadv.com.br/` |
 | Robots | `<meta name="robots">` | `index, follow` |
 | Sitemap | `sitemap.xml` | Presente na raiz |
 | Robots.txt | `robots.txt` | Presente na raiz |

@@ -170,9 +170,9 @@ Adicionado em páginas principais:
 
 #### 1. Google Search Console
 - [ ] Acessar https://search.google.com/search-console
-- [ ] Adicionar propriedade: `https://www.luandanaiara.ag5agencia.site`
+- [ ] Adicionar propriedade: `https://www.luandanaiaraadv.com.br`
 - [ ] Verificar propriedade (recomendado: tag HTML)
-- [ ] Submeter sitemap: `https://www.luandanaiara.ag5agencia.site/sitemap.xml`
+- [ ] Submeter sitemap: `https://www.luandanaiaraadv.com.br/sitemap.xml`
 - [ ] Solicitar indexação das páginas principais
 
 #### 2. Google Meu Negócio

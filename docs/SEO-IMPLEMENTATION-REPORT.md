@@ -100,14 +100,14 @@
 
 #### Google Search Console
 - [ ] Acessar https://search.google.com/search-console
-- [ ] Adicionar propriedade: `https://www.luandanaiara.ag5agencia.site`
+- [ ] Adicionar propriedade: `https://www.luandanaiaraadv.com.br`
 - [ ] Verificar propriedade (via HTML tag, DNS ou Google Analytics)
-- [ ] Submeter sitemap: `https://www.luandanaiara.ag5agencia.site/sitemap.xml`
+- [ ] Submeter sitemap: `https://www.luandanaiaraadv.com.br/sitemap.xml`
 - [ ] Solicitar indexação das páginas principais:
-  - https://www.luandanaiara.ag5agencia.site/
-  - https://www.luandanaiara.ag5agencia.site/sobre-dra-luanda.html
-  - https://www.luandanaiara.ag5agencia.site/servicos/
-  - https://www.luandanaiara.ag5agencia.site/direito-previdenciario/
+  - https://www.luandanaiaraadv.com.br/
+  - https://www.luandanaiaraadv.com.br/sobre-dra-luanda.html
+  - https://www.luandanaiaraadv.com.br/servicos/
+  - https://www.luandanaiaraadv.com.br/direito-previdenciario/
 
 #### Google Meu Negócio (GMB)
 - [ ] Verificar se o perfil está completo: https://business.google.com/

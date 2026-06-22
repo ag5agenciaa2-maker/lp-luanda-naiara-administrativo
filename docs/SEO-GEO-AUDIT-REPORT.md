@@ -1,7 +1,7 @@
 # Relatório de Auditoria SEO/GEO - Luanda Naiara Advocacia
 
 **Data:** 30/03/2026  
-**Site:** https://www.luandanaiara.ag5agencia.site  
+**Site:** https://www.luandanaiaraadv.com.br  
 **Auditor:** SEO Specialist Agent
 
 ---
