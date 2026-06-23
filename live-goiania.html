@@ -124,7 +124,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -185,6 +185,31 @@
       body { padding-bottom: 100px; }
       #wa-float { bottom: 1rem; right: 1rem; width: 56px; height: 56px; }
       #wa-float svg { width: 28px; height: 28px; }
+    }
+
+    /* ── Footer Administrativo (mesmo da index.html) ── */
+    .adm-footer-site {
+      background-color: #000000;
+      border-top: 1px solid rgba(144, 108, 22, 0.2);
+      color: rgba(255, 255, 255, 0.7);
+      font-family: 'Inter', sans-serif;
+      padding: 0;
+      position: relative;
+      z-index: 10;
+      text-align: left;
+      height: 555px;
+    }
+    .adm-footer-main {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 35px 1.5rem 30px;
+    }
+    .adm-footer-nav-col { width: auto; margin-left: 57px; }
+    .adm-footer-spec-col { width: auto; margin-left: 29px; }
+    .adm-footer-site .font-serif { font-family: 'Playfair Display', Georgia, serif; }
+    @media (max-width: 1023px) {
+      .adm-footer-site { height: auto; }
+      .adm-footer-nav-col, .adm-footer-spec-col { margin: 0; width: auto; padding: 0; }
     }
   </style>
 </head>
@@ -719,26 +744,143 @@
 <!-- ════════════════════════════════════════════
      FOOTER
 ════════════════════════════════════════════ -->
-<footer class="bg-black border-t border-[#906c16]/20 py-10">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-      <div>
-        <p class="text-[#c9a227] font-black text-base mb-1">LN CONSULTORIA JURÍDICA ESPECIALIZADA</p>
-        <p class="text-white/40 text-xs">Dra. Luanda Naiara · OAB/RJ 228701 · Atendimento nacional</p>
-        <p class="text-white/40 text-xs mt-1">Estr. da Cachamorra, 350 · Bloco 03, Sala 403 · Campo Grande, RJ</p>
+<!-- RODAPÉ (mesmo modelo da index.html) -->
+<footer class="adm-footer-site relative pt-20 pb-10 bg-[#1a1a1a] overflow-hidden">
+  <!-- Decoration element -->
+  <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#906c16]/50 to-transparent"></div>
+
+  <div class="w-full px-4 sm:px-6 lg:px-12 xl:px-20 adm-footer-main">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+
+      <!-- Coluna 1: Marca & Missão -->
+      <div class="space-y-6">
+        <img src="assets/logo-branca-luanda-naiara-consultoria-juridica-especializada.webp"
+             alt="Luanda Naiara - Advogada (Concurso Público)" class="h-14 w-auto brightness-110">
+        <p class="text-white/60 text-sm leading-relaxed max-w-xs">
+          Escritório especializado em Direito Administrativo e Concursos Públicos. Atuamos com excelência técnica e foco na garantia dos seus direitos fundamentais.
+        </p>
+        <div class="flex items-center gap-4">
+          <a href="https://www.instagram.com/luandanaiaraadv/" target="_blank" rel="noopener noreferrer"
+             class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/70 hover:bg-[#906c16] hover:text-white hover:border-[#906c16] transition-all duration-300">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+          </a>
+          <a href="https://br.linkedin.com/in/dra-luanda-naiara-ceo-de-escrit%C3%B3rio-de-advocacia-08919073" target="_blank" rel="noopener noreferrer"
+             class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/70 hover:bg-[#906c16] hover:text-white hover:border-[#906c16] transition-all duration-300">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/luandanaiaraadv/" target="_blank" rel="noopener noreferrer"
+             class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/70 hover:bg-[#906c16] hover:text-white hover:border-[#906c16] transition-all duration-300">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+            </svg>
+          </a>
+        </div>
       </div>
-      <div class="flex flex-col items-center md:items-end gap-2">
-        <a href="https://wa.me/5521972542096?text=Concurso%20Goi%C3%A2nia%2C%20vim%20pelo%20site"
-           target="_blank"
-           class="inline-flex items-center gap-2 text-[#25D366] hover:text-white text-sm font-semibold transition-colors">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.553 4.103 1.522 5.83L.07 23.077a.75.75 0 00.91.91l5.247-1.452A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.737 9.737 0 01-5.006-1.383l-.36-.213-3.732 1.033 1.033-3.732-.213-.36A9.737 9.737 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/>
-          </svg>
-          (21) 97254-2096
-        </a>
-        <a href="https://instagram.com/luandanaiaraadv" target="_blank" class="text-white/40 hover:text-white text-xs transition-colors">@luandanaiaraadv</a>
-        <p class="text-white/20 text-xs">© 2026 Luanda Naiara Advocacia · Todos os direitos reservados</p>
+
+      <!-- Coluna 2: Navegação -->
+      <div class="adm-footer-nav-col">
+        <h4 class="font-serif text-white text-lg font-semibold mb-8 relative inline-block">
+          Links Rápidos
+          <span class="absolute -bottom-2 left-0 w-8 h-0.5 bg-[#906c16]"></span>
+        </h4>
+        <ul class="space-y-4">
+          <li><a href="/" class="text-white/60 hover:text-[#c9a227] transition-colors text-sm flex items-center gap-2 group"><span class="w-1.5 h-1.5 rounded-full bg-[#906c16]/30 group-hover:bg-[#906c16] transition-colors"></span> Início</a></li>
+          <li><a href="/servicos/" class="text-white/60 hover:text-[#c9a227] transition-colors text-sm flex items-center gap-2 group"><span class="w-1.5 h-1.5 rounded-full bg-[#906c16]/30 group-hover:bg-[#906c16] transition-colors"></span> Serviços</a></li>
+          <li><a href="/sobre-dra-luanda" class="text-white/60 hover:text-[#c9a227] transition-colors text-sm flex items-center gap-2 group"><span class="w-1.5 h-1.5 rounded-full bg-[#906c16]/30 group-hover:bg-[#906c16] transition-colors"></span> Sobre a Doutora</a></li>
+          <li><a href="/#contato" class="text-white/60 hover:text-[#c9a227] transition-colors text-sm flex items-center gap-2 group"><span class="w-1.5 h-1.5 rounded-full bg-[#906c16]/30 group-hover:bg-[#906c16] transition-colors"></span> Contato</a></li>
+        </ul>
+      </div>
+
+      <!-- Coluna 3: Áreas de Atuação -->
+      <div class="adm-footer-spec-col">
+        <h4 class="font-serif text-white text-lg font-semibold mb-8 relative inline-block">
+          Especialidades
+          <span class="absolute -bottom-2 left-0 w-8 h-0.5 bg-[#906c16]"></span>
+        </h4>
+        <ul class="space-y-4">
+          <li><a href="/#servicos" class="text-white/60 hover:text-[#c9a227] transition-colors text-sm">Nomeação e Posse</a></li>
+          <li><a href="/#servicos" class="text-white/60 hover:text-[#c9a227] transition-colors text-sm">Direito Administrativo</a></li>
+          <li><a href="/#servicos" class="text-white/60 hover:text-[#c9a227] transition-colors text-sm">Cotas Raciais</a></li>
+          <li><a href="/#servicos" class="text-white/60 hover:text-[#c9a227] transition-colors text-sm">Defesa de Servidor</a></li>
+          <li><a href="/#servicos" class="text-white/60 hover:text-[#c9a227] transition-colors text-sm">Piso do Magistério</a></li>
+        </ul>
+      </div>
+
+      <!-- Coluna 4: Contato -->
+      <div class="space-y-6">
+        <h4 class="font-serif text-white text-lg font-semibold mb-8 relative inline-block">
+          Contato
+          <span class="absolute -bottom-2 left-0 w-8 h-0.5 bg-[#906c16]"></span>
+        </h4>
+        <div class="space-y-5">
+          <!-- Nome da Empresa -->
+          <a href="https://share.google/yKxKbfZrGtUXprTmP" target="_blank" class="flex items-center gap-3 group">
+            <div class="w-8 h-8 rounded bg-[#906c16]/10 flex items-center justify-center text-[#906c16] group-hover:bg-[#906c16] group-hover:text-white transition-all">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <span class="text-white text-sm font-semibold group-hover:text-[#c9a227] transition-colors">Luanda Naiara - Advogada (Concurso Público)</span>
+          </a>
+          <!-- Endereço -->
+          <a href="https://www.google.com/maps/dir//Luanda+Naiara+-+Advogada+(Concurso+Público)+-+Estr.+da+Cachamorra,+350+-+Bloco+03,+Sala+403+-+Campo+Grande,+Rio+de+Janeiro+-+RJ,+23040-150"
+             target="_blank" class="flex items-start gap-3 group">
+            <div class="w-8 h-8 rounded bg-[#906c16]/10 flex items-center justify-center text-[#906c16] flex-shrink-0 group-hover:bg-[#906c16] group-hover:text-white transition-all">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <p class="text-white/60 text-sm leading-snug group-hover:text-white transition-colors">
+              Estr. da Cachamorra, 350 - Bloco 03, Sala 403, Campo Grande, RJ
+            </p>
+          </a>
+          <!-- WhatsApp -->
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded bg-[#906c16]/10 flex items-center justify-center text-[#906c16]">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+            </div>
+            <a href="https://wa.me/5521972542096?text=Olá,%20vim%20através%20do%20site%20e%20gostaria%20de%20uma%20informação."
+               target="_blank" class="text-white/60 hover:text-white transition-colors text-sm font-medium">
+              (21) 97254-2096
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Credits -->
+    <div class="mt-20 pt-8 border-t border-white/5 space-y-2">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+        <p class="text-white/30 text-[10px] md:text-xs">
+          © 2026 <a href="https://share.google/yKxKbfZrGtUXprTmP" target="_blank" class="hover:text-white transition-colors">Luanda Naiara - Advogada (Concurso Público)</a> | OAB/RJ 228701. Todos os direitos reservados.
+        </p>
+        <span class="text-white/30 text-[10px] md:text-xs">
+          Desenvolvido por <a href="https://www.ag5agencia.com.br" target="_blank" class="text-[#906c16] hover:text-[#c9a227] transition-colors font-medium">AG5 Agência</a>
+        </span>
+      </div>
+
+      <div class="text-center md:text-left">
+        <p class="text-white/20 text-[10px]">
+          <span itemprop="dateModified">Última atualização: 26 de Maio de 2026</span> |
+          <span itemprop="datePublished">Publicado em: 2024</span>
+        </p>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center md:justify-start gap-x-4 gap-y-1">
+        <a href="/termos-e-condicoes" class="text-white/30 hover:text-white text-[10px] md:text-xs transition-colors">Termos de Uso</a>
+        <span class="text-white/10 text-[10px] md:text-xs">|</span>
+        <a href="/politica-de-privacidade" class="text-white/30 hover:text-white text-[10px] md:text-xs transition-colors">Política de Privacidade</a>
       </div>
     </div>
   </div>
