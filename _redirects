@@ -11,3 +11,9 @@
 /pretericao-geral.html /pretericao-concurso-publico 301
 /pretericao-geral /pretericao-concurso-publico 301
 /cotas-heteroidentificacao.html /cotas-heteroidentificacao 301
+
+# Spam residual do hack do site antigo (Japanese Keyword Hack) — forçar 404
+/detail/* /404.html 404
+/shop/* /404.html 404
+/item/* /404.html 404
+/product/* /404.html 404
