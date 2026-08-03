@@ -159,42 +159,39 @@ nav {
   justify-content: space-between;
   box-shadow: 0 2px 24px rgba(0,0,0,0.3);
 }
-.nav-logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 21px;
-  font-weight: 700;
-  color: #fff;
-  text-decoration: none;
-  letter-spacing: 0.04em;
-  line-height: 1.2;
-}
-.nav-logo span {
-  display: block;
-  font-family: 'Inter', sans-serif;
-  font-size: 10px;
-  font-weight: 400;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  opacity: 0.78;
-  margin-top: 2px;
-}
+.nav-logo-wrap { display: flex; align-items: center; }
+.nav-logo-img { height: 38px; width: auto; filter: brightness(1.1); }
+.nav-links { display: flex; align-items: center; gap: 28px; }
+.nav-links a { color: rgba(255,255,255,0.92); text-decoration: none; font-size: 13.5px; font-weight: 600; letter-spacing: 0.02em; transition: color .2s; }
+.nav-links a:hover { color: #fff; }
 .nav-cta {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: var(--hero-bg);
-  color: var(--gold-light);
-  text-decoration: none;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  padding: 10px 20px;
-  border-radius: 6px;
-  border: 1px solid rgba(184,137,42,0.4);
-  transition: all 0.2s;
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--hero-bg); color: var(--gold-light); text-decoration: none;
+  font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+  padding: 10px 20px; border-radius: 6px; border: 1px solid rgba(184,137,42,0.4); transition: all 0.2s;
 }
 .nav-cta:hover { background: rgba(28,16,8,0.9); border-color: var(--gold-light); color: #fff; }
+/* Hamburger */
+.nav-burger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 6px; }
+.nav-burger span { width: 24px; height: 2px; background: #fff; border-radius: 2px; transition: all .3s; }
+/* Drawer mobile */
+.nav-drawer-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.55); backdrop-filter: blur(4px); z-index: 1000; opacity: 0; pointer-events: none; transition: opacity .3s; }
+.nav-drawer-overlay.open { opacity: 1; pointer-events: auto; }
+.nav-drawer {
+  position: fixed; top: 0; right: 0; height: 100%; width: 84%; max-width: 320px;
+  background: var(--hero-bg); z-index: 1001; transform: translateX(100%); transition: transform .35s cubic-bezier(0.16,1,0.3,1);
+  display: flex; flex-direction: column; gap: 4px; padding: 80px 28px 28px;
+}
+.nav-drawer.open { transform: translateX(0); }
+.nav-drawer a { color: rgba(255,255,255,0.92); text-decoration: none; font-size: 16px; font-weight: 600; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.08); transition: color .2s; }
+.nav-drawer a:hover { color: var(--gold-light); }
+.nav-drawer-cta { margin-top: 20px; background: #25D366 !important; color: #fff !important; text-align: center; border-radius: 10px; border-bottom: none !important; padding: 14px !important; }
+.nav-drawer-close { position: absolute; top: 20px; right: 22px; background: none; border: none; color: #fff; font-size: 34px; line-height: 1; cursor: pointer; }
+@media (max-width: 900px) {
+  .nav-links { display: none; }
+  .nav-cta { display: none; }
+  .nav-burger { display: flex; }
+}
 
 /* === HERO === */
 .hero {
@@ -1021,15 +1018,28 @@ table.tabela-pretericao {
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo">
-    LN Advocacia
-    <span>Dra. Luanda Naiara — OAB/RJ 228701</span>
+  <a href="https://www.luandanaiaraadv.com.br/" class="nav-logo-wrap" aria-label="Luanda Naiara Advocacia">
+    <img src="assets/logo-branca-luanda-naiara-consultoria-juridica-especializada.webp" alt="Luanda Naiara - Advogada (Concurso Público)" class="nav-logo-img">
   </a>
-  <a href="https://wa.me/5521972542096?text=Concurso%20Cabo%20Frio%2C%20vim%20pelo%20site"
-     class="nav-cta" target="_blank" rel="noopener">
-    → Analisar meu caso
-  </a>
+  <div class="nav-links">
+    <a href="https://www.luandanaiaraadv.com.br/">Início</a>
+    <a href="https://www.luandanaiaraadv.com.br/servicos/">Serviços</a>
+    <a href="https://www.luandanaiaraadv.com.br/sobre-dra-luanda">Sobre a Doutora</a>
+    <a href="https://www.luandanaiaraadv.com.br/direito-previdenciario/">Previdenciário</a>
+  </div>
+  <a href="https://wa.me/5521972542096?text=Concurso%20Cabo%20Frio%2C%20vim%20pelo%20site" class="nav-cta" target="_blank" rel="noopener">Fale Conosco</a>
+  <button class="nav-burger" id="navBurger" aria-label="Abrir menu"><span></span><span></span><span></span></button>
 </nav>
+<div class="nav-drawer-overlay" id="navOverlay"></div>
+<div class="nav-drawer" id="navDrawer">
+  <button class="nav-drawer-close" id="navClose" aria-label="Fechar menu">&times;</button>
+  <a href="https://www.luandanaiaraadv.com.br/">Início</a>
+  <a href="https://www.luandanaiaraadv.com.br/servicos/">Serviços</a>
+  <a href="https://www.luandanaiaraadv.com.br/sobre-dra-luanda">Sobre a Doutora</a>
+  <a href="https://www.luandanaiaraadv.com.br/direito-previdenciario/">Previdenciário</a>
+  <a href="https://www.luandanaiaraadv.com.br/cotas-heteroidentificacao">Cotas e Heteroidentificação</a>
+  <a href="https://wa.me/5521972542096?text=Concurso%20Cabo%20Frio%2C%20vim%20pelo%20site" class="nav-drawer-cta" target="_blank" rel="noopener">Falar no WhatsApp</a>
+</div>
 
 <!-- HERO -->
 <section class="hero">
@@ -1685,5 +1695,16 @@ table.tabela-pretericao {
   </div>
 </footer>
 
+<script>
+  (function(){
+    var b=document.getElementById('navBurger'),d=document.getElementById('navDrawer'),
+        o=document.getElementById('navOverlay'),c=document.getElementById('navClose');
+    if(!b||!d)return;
+    function open(){d.classList.add('open');o.classList.add('open');document.body.style.overflow='hidden';}
+    function shut(){d.classList.remove('open');o.classList.remove('open');document.body.style.overflow='';}
+    b.addEventListener('click',open);c.addEventListener('click',shut);o.addEventListener('click',shut);
+    d.querySelectorAll('a').forEach(function(a){a.addEventListener('click',shut);});
+  })();
+</script>
 </body>
 </html>

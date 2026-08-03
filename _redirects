@@ -13,6 +13,8 @@
 /cotas-heteroidentificacao.html /cotas-heteroidentificacao 301
 /pretericao-cabo-frio.html /pretericao-cabo-frio 301
 /landpage-live-cabo-frio-v2-29-07.html /pretericao-cabo-frio 301
+/pretericao-novo-gama.html /pretericao-novo-gama 301
+/landpage-live-novo-gama-v2.html /pretericao-novo-gama 301
 
 # Spam residual do hack do site antigo (Japanese Keyword Hack) — forçar 404
 /detail/* /404.html 404
