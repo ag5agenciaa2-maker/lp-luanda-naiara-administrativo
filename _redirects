@@ -6,7 +6,8 @@
 /termos-e-condicoes.html /termos-e-condicoes 301
 /direito-previdenciario/servicos.html /direito-previdenciario/servicos 301
 /direito-previdenciario/sobre-dra-luanda.html /direito-previdenciario/sobre-dra-luanda 301
-/live-goiania.html /live-goiania 301
+/live-goiania.html /lives/goiania 301
+/live-goiania /lives/goiania 301
 /pretericao-concurso-publico.html /pretericao-concurso-publico 301
 /pretericao-geral.html /pretericao-concurso-publico 301
 /pretericao-geral /pretericao-concurso-publico 301
@@ -16,8 +17,10 @@
 /pretericao-novo-gama.html /pretericao-novo-gama 301
 /landpage-live-novo-gama-v2.html /pretericao-novo-gama 301
 /lives.html /lives 301
-/live-itaperuna.html /live-itaperuna 301
-/live-muriae.html /live-muriae 301
+/live-itaperuna.html /lives/itaperuna 301
+/live-itaperuna /lives/itaperuna 301
+/live-muriae.html /lives/muriae 301
+/live-muriae /lives/muriae 301
 
 # Spam residual do hack do site antigo (Japanese Keyword Hack) — forçar 404
 /detail/* /404.html 404
