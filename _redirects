@@ -21,6 +21,8 @@
 /live-itaperuna /lives/itaperuna 301
 /live-muriae.html /lives/muriae 301
 /live-muriae /lives/muriae 301
+/metodo-4d.html /metodo-4d 301
+/checklist-4d.html /checklist-4d 301
 
 # Spam residual do hack do site antigo (Japanese Keyword Hack) — forçar 404
 /detail/* /404.html 404
