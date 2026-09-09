@@ -892,7 +892,7 @@ footer a{color:var(--gold-light)}
     };
     if (typeof gtag === 'function') {
       gtag('event', 'conversion', {
-        // 'send_to': 'AW-10949146943/SEU_LABEL_AQUI', // TODO: colar o label real do Google Ads (ver docs/PENDENCIAS-METODO-4D.md)
+        'send_to': 'AW-10949146943/8wzgCML2mfIcEL_y-uQo',
         'value': 200.0, 'currency': 'BRL',
         'event_callback': seguir
       });
@@ -907,7 +907,7 @@ footer a{color:var(--gold-light)}
   /* Ligação também é conversão neste avatar — boa parte prefere voz a link. */
   function conversaoLigacao() {
     if (typeof gtag === 'function') {
-      gtag('event', 'conversion', { // 'send_to': 'AW-10949146943/SEU_LABEL_AQUI', // TODO: colar o label real do Google Ads (ver docs/PENDENCIAS-METODO-4D.md) 'value': 200.0, 'currency': 'BRL' });
+      gtag('event', 'conversion', { 'send_to': 'AW-10949146943/8wzgCML2mfIcEL_y-uQo', 'value': 200.0, 'currency': 'BRL' });
     }
     if (typeof fbq === 'function') {
       fbq('track', 'Contact', { value: 200.0, currency: 'BRL' });
