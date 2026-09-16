@@ -23,6 +23,11 @@
 /live-muriae /lives/muriae 301
 /metodo-4d.html /metodo-4d 301
 /checklist-4d.html /checklist-4d 301
+/landpage-live-alfredo-chaves.html /lives/alfredo-chaves 301
+/live-alfredo-chaves /lives/alfredo-chaves 301
+/landpage-live-goiania-final.html /lives/goiania 301
+/landpage-live-seduc-sp.html /lives/seduc-sp 301
+/live-seduc-sp /lives/seduc-sp 301
 
 # Spam residual do hack do site antigo (Japanese Keyword Hack) — forçar 404
 /detail/* /404.html 404
