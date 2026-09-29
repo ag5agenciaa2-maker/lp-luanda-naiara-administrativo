@@ -28,6 +28,7 @@
 /landpage-live-goiania-final.html /lives/goiania 301
 /landpage-live-seduc-sp.html /lives/seduc-sp 301
 /live-seduc-sp /lives/seduc-sp 301
+/landpage-ebook-consignado.html /ebook-consignado 301
 
 # Spam residual do hack do site antigo (Japanese Keyword Hack) — forçar 404
 /detail/* /404.html 404
